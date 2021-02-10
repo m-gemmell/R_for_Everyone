@@ -116,13 +116,13 @@ Note: when `!` is used in __operators__ it means "not". When used, `!` always go
 ```{r eval=FALSE}
 #Logical
 # 2 less than 4 
-2 < 2
+2 < 4
 # 2 greater than 4
-2 > 2
+2 > 4
 # 2 less than or equal to 4
 2 <= 4
 # greater than or equal
-2 >= 2
+2 >= 4
 # equal
 2 == 4
 # not equal

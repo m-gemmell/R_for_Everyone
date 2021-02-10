@@ -1,0 +1,40 @@
+# Further resources
+```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
+knitr::include_graphics(path = "figures/internet.png", auto_pdf = TRUE)
+``` 
+
+## R user groups and forums
+
+- https://jumpingrivers.github.io/meetingsR/r-user-groups.html#europe
+- https://www.r-consortium.org/blog/2019/09/09/r-community-explorer-r-user-groups
+- https://r-dir.com/community/forums.html
+
+## Base R books and links
+
+__Quick-R__: https://www.statmethods.net/index.html
+
+__R Cookbook__: https://rc2e.com/
+
+## R cheat sheets
+
+https://rstudio.com/resources/cheatsheets/
+
+## Advanced R topics
+
+__R packages__: https://r-pkgs.org/
+
+__R for Data Science__: https://r4ds.had.co.nz/
+
+__R Graphics Cookbook__: https://r-graphics.org/
+
+__Fundamentals of Data Visualization__: https://clauswilke.com/dataviz/
+
+__R BOOKDOWN__ (used ot make this book): https://bookdown.org/
+
+__Hands-On Programming with R__: https://rstudio-education.github.io/hopr/
+
+__Efficient R programming__: https://csgillespie.github.io/efficientR/
+
+## Datasets
+I got a lot of my datasets from Kaggle:
+https://www.kaggle.com/
