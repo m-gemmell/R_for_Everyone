@@ -6,7 +6,7 @@ knitr::include_graphics(path = "figures/magic.png", auto_pdf = TRUE)
 
 Welcome to week 4! This week will include coding to reinforce what you have learnt up to this point. There will also be plenty of new handy __functions__ and some more concepts to learn.
 
-For this week create a script called "Week3_practice.R". Remember to use annotations (`#`) and code sections (`####`)!
+For this week create a script called "Week4_practice.R". Remember to use annotations (`#`) and code sections (`####`)!
 
 However, I'll first introduce you to some R conventions and then some useful abilities of RStudio.
 
@@ -17,7 +17,7 @@ knitr::include_graphics(path = "figures/rules.png", auto_pdf = TRUE)
 
 R conventions are style guides. You do not need to follow them but they are intended to help make code easier to read. There are lots of different suggestions for different parts of R code. Here we will only look at conventions for __object/variable names__ and wide vs long code formatting.
 
-###Variable names
+### Variable names
 __Variable names__ have certain rules that must be followed. We covered these in week 1 but below is a reminder:
 
 - Must start with a letter.
@@ -28,7 +28,7 @@ __Variable names__ have certain rules that must be followed. We covered these in
 
 On top of these rules there are a few naming styles that are recommended. It is very good to choose one naming style and stick with it always. Below are three commonly used naming conventions for R. Look through them and choose your favourite to use.
 
-####Snake case
+#### Snake case
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/snake_case.png", auto_pdf = TRUE)
 ```
@@ -43,11 +43,11 @@ three_four_five_2_vec
 this_is_snake_case
 ``` 
 
-####Period separated
+#### Period separated
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/period_separated.png", auto_pdf = TRUE)
 ```
-Period seperated is almost identical to snake case. Just swap the underscores (`_`) with periods (`.`). Below are some examples of names in period separated.
+Period separated is almost identical to snake case. Just swap the underscores (`_`) with periods (`.`). Below are some examples of names in period separated.
 
 ```{r eval=FALSE}
 one
@@ -58,7 +58,7 @@ three.four.five.2.vec
 this.is.period.separated
 ``` 
 
-####Camel case
+#### Camel case
 ```{r, fig.align = 'center',out.width= '15%', echo=FALSE }
 knitr::include_graphics(path = "figures/camelCase.png", auto_pdf = TRUE)
 ```
@@ -75,7 +75,7 @@ thisIsCamelCase
 
 There are exceptions when you will want to break your naming style such as when creating __vectors__ to be used as columns for a __data frame__.
 
-###Wide vs Long coding
+#### Wide vs Long coding
 
 If a command/__function__ is only on one line then you were using wide coding. This is good with short commands and __functions__ but is not very suitable for longer commands. Below are examples of long commands over one line each.
 ```{r eval=FALSE}
@@ -107,7 +107,7 @@ If you are interested in more about R style guide I would recommend looking at t
 ## RStudio
 RStudio has many useful features which we have not covered. Let us remedy this and cover a few.
 
-###Global options
+### Global options
 ```{r, fig.align = 'center',out.width= '15%', echo=FALSE }
 knitr::include_graphics(path = "figures/global.png", auto_pdf = TRUE)
 ```
@@ -134,7 +134,7 @@ This will be useful for tab completion which we will cover shortly.
 knitr::include_graphics(path = "figures/RStudio_manual_tab.png", auto_pdf = TRUE)
 ```
 
-###Sweep buttons
+### Sweep buttons
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/sweep.png", auto_pdf = TRUE)
 ```
@@ -150,7 +150,7 @@ The sweep button for the __Environment pane__ is a bit more dangerous. This swee
 knitr::include_graphics(path = "figures/RStudio_env_sweep.png", auto_pdf = TRUE)
 ```
 
-##Multiplication table
+## Multiplication table
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/multiplication.png", auto_pdf = TRUE)
 ```
@@ -192,7 +192,7 @@ colnames(multiplication_df)[8] <- "eight"
 row.names(multiplication_df)[7:8] <- c("seven","eight")
 ```
 
-##Tab complete
+## Tab complete
 ```{r, fig.align = 'center',out.width= '15%', echo=FALSE }
 knitr::include_graphics(path = "figures/tab.png", auto_pdf = TRUE)
 ```
@@ -239,7 +239,7 @@ Data from above files:
 - https://en.wikipedia.org/wiki/List_of_countries_by_tea_consumption_per_capita
 - https://en.wikipedia.org/wiki/List_of_countries_by_English-speaking_population
 
-##Tea
+## Tea
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/tea.png", auto_pdf = TRUE)
 ```
@@ -306,7 +306,7 @@ If you are interested in more regular expressions I would recommend looking at t
 - https://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions
 - https://rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf
 
-##English speakers across the world
+## English speakers across the world
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/language.png", auto_pdf = TRUE)
 ```
@@ -356,7 +356,7 @@ I would use the one command method but the multi line method is just as valid. I
 We will come back to the __data frames__ "tea_df" and "english_complete_datasets_df" for the exercises. But let us go onto 2 more topics.
 
 
-##Identical
+## Identical
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/identikeys.png", auto_pdf = TRUE)
 ```
@@ -378,7 +378,7 @@ identical(english_df,english_df)
 identical(english_df,tea_df)
 ```
 
-##Shortcuts
+## Shortcuts
 ```{r, fig.align = 'center',out.width= '30%', echo=FALSE }
 knitr::include_graphics(path = "figures/keyboard.png", auto_pdf = TRUE)
 ```

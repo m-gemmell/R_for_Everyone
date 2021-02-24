@@ -288,7 +288,7 @@ for (i in 0:9) {
 }
 ```
 
-##Custom Functions
+##  Functions
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/custon_function.png", auto_pdf = TRUE)
 ``` 

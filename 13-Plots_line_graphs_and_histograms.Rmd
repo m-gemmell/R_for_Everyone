@@ -98,7 +98,7 @@ retail_df <- retail_df[29:37,]
 
 Before we continue have a look at the __data frame__ and make sure you are comfortable with what it contains. 
 
-###Plotting a line graph
+### Plotting a line graph
 We are going to plot the entire information for the Food sector. We will use the __function__ `plot()` with the option `type = "l"`. This will produce a plot of type "line" (`"l"`).
 
 This requires we provide a numeric __vector__ for the x axis (option `x = `) and the y axis (option `y = `). Currently our month and year information is in the row names as strings. 

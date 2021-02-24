@@ -3,7 +3,7 @@
 knitr::include_graphics(path = "figures/answers.png", auto_pdf = TRUE)
 ```
 
-##Tea solution
+## Tea solution
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/tea.png", auto_pdf = TRUE)
 ```
@@ -48,7 +48,7 @@ paste0(tea_df_subset$Country, " is the number ", tea_df_subset$Rank,
        " consumer of tea. It consumes ", tea_df_subset$kg, "kg of tea annually per capita.")
 ```
 
-##English speakers across the world solution
+## English speakers across the world solution
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/language.png", auto_pdf = TRUE)
 ```

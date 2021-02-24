@@ -3,7 +3,7 @@
 knitr::include_graphics(path = "figures/R_df.png", auto_pdf = TRUE)
 ``` 
 
-##Reading from a file
+## Reading from a file
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/r_read.png", auto_pdf = TRUE)
 ``` 
@@ -22,7 +22,7 @@ To view the file with RStudio:
 
 You will notice that the values are sperarated by commas as this is a "comma seperated value" (.csv) file. Additionally, this is the same data as the "beach_df_2" __data frame__ you created in last week's exercises. 
 
-There are various __functions__ to __read__ in files into R. My favourite that I find most consistent is `read.csv(). Use this function to __read__ in the file "Liverpool_beaches.csv":
+There are various __functions__ to __read__ in files into R. My favourite that I find most consistent is `read.csv()`. Use this function to __read__ in the file "Liverpool_beaches.csv":
 ```{r eval=FALSE}
 liv_beaches_df <- read.csv("Liverpool_beaches.csv")
 ```
@@ -54,14 +54,14 @@ https://readxl.tidyverse.org/
 
 An important note is that __reading__ in a file into R will not change the file. You are creating a new R __object__. Modifying this __object__ will not alter the original file. Later in the materials we will look into how to create new files or overwrite files by __writing__.
 
-##Subsetting data
+## Subsetting data
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/R_subset.png", auto_pdf = TRUE)
 ``` 
 
 R allows you to specify specific points in __R objects__. This is one of the primary reasons R is so useful and flexible. With good use of __assignment operators__ this allows for the subsetting of __variables__.
 
-###Vectors
+### Vectors
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/R_square_bracket.png", auto_pdf = TRUE)
 ``` 
@@ -174,7 +174,7 @@ divis_7_vec <- single_digit_vec[(single_digit_vec %% 7) == 0]
 #Try out other numbers!
 ```
 
-###Data frames
+### Data frames
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/envelope.png", auto_pdf = TRUE)
 ``` 
@@ -197,7 +197,7 @@ Now for some subset commands:
 #Scalar from the 1st row and 1st column
 L_2011_census_df[1,1]
 #Row names and column names can be used for indexxing
-#Scalar from the row called L10 1LD: E00033706 and the column called Postcode
+#Scalar from the row called L10 1LD: E00033706 and the column called Area
 L_2011_census_df["L10 1LD","Area"]
 #More examples
 L_2011_census_df[1:10,2]
@@ -292,7 +292,7 @@ summary(t(L_2011_census_df[,3:5]))
 
 Try the above commands without subsetting the __data frame__. What is happening and why?
 
-##Writing to a file
+## Writing to a file
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/R_writing.png", auto_pdf = TRUE)
 ``` 
@@ -329,7 +329,7 @@ L_2011_census_t_df <- as.data.frame(L_2011_census_t_df)
 str(L_2011_census_t_df)
 ```
 
-After all that let us __write__ the __data frame__ to a file called "Census_info_2011.csv". When __reading__ from a file a prefer `read.csv()`, however when writing to a file I prefer `write.table()`. With this __function__ we will include the option `sep=","` to have commas as the column seperators. We will also include the option `col.names=NA` to create an empty space above the row names. If this was not included then the first column name would be above the row names.
+After all that let us __write__ the __data frame__ to a file called "Census_info_2011.csv". When __reading__ from a file I prefer `read.csv()`, however when writing to a file I prefer `write.table()`. With this __function__ we will include the option `sep=","` to have commas as the column separators. We will also include the option `col.names=NA` to create an empty space above the row names. If this was not included then the first column name would be above the row names.
 ```{r eval=FALSE}
 write.table(L_2011_census_t_df, file = "Census_info_2011.csv", sep = ",", col.names=NA)
 ```

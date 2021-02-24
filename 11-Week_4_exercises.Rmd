@@ -7,7 +7,7 @@ There has been a lot covered this week so these exercises will hopefully be stra
 
 Please use your "Exercises.R" script for this, using annotations and code sections to keep the contents clear and separated.
 
-##Tea exercise
+## Tea exercise
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/tea.png", auto_pdf = TRUE)
 ```
@@ -20,7 +20,7 @@ Print out this satement for the countries Ireland, United Kingdom, France, and A
 
 __Tip__: You will require the __functions__ `paste()` and `round()` from week 2 and 1.
 
-##English speakers across the world exercise
+## English speakers across the world exercise
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/language.png", auto_pdf = TRUE)
 ```
@@ -60,7 +60,7 @@ When you have created yours check it with the above one. Is your value for the "
 
 Once you have created the __data frame__ __write__ it out as a comma separated file with the function `write.table()` called "English_top_7_populated_countries.csv". Have the row and column names surrounded by quotes in your file. Make sure there is an empty value above your row names.
 
-##Extra exercise
+## Extra exercise
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/multiplication.png", auto_pdf = TRUE)
 ```
