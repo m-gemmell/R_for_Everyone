@@ -37,8 +37,8 @@ With that information carry out the following tasks and answer the questions:
 3. Create the below plot.
     + The equation does not have to be in exactly the same position as the below. Just make sure it is all clearly visible, it contains the same text, and it is not on top of any points.
     + The colour for the line is "mediumslateblue"
-    + Note you can put "\n" into a label/title to make a new line.
-    + e.g "This is the first line \n and this is the second line"
+    + Note you can put "\\n" into a label/title to make a new line.
+    + e.g "This is the first line \\n and this is the second line"
 ```{r eval=TRUE, echo=FALSE, fig.width= 8, fig.height=8}
 #Read in df
 happy_df <- read.csv("world_happiness_report_2016.csv", 

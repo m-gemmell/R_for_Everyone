@@ -185,7 +185,7 @@ lines(y = retail_df$Fuel, x = retail_df$time_point)
 When the plot is generated there may be only some labels showing for the x axis. If you would like to show them all increase the size of the __MISC window__.
 
 ### Plot titles
-Before we colour the lines different colours, let us add a main title and provided better x and y axis with better titles.
+Before we colour the lines different colours, let us add a main title and provide the x and y axis with better titles.
 ```{r eval=FALSE}
 #Produce line plot of the food sector over time point.
 #Add main, x, and y titles
