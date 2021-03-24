@@ -2,7 +2,7 @@
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/programming.png", auto_pdf = TRUE)
 ``` 
-This week we will be look at some basic programming with R. This will involve __loops__, __if__ statements, and creating your own __functions__.  However, before carrying out some programming we will look a R's __recycle rule__
+This week we will be look at some basic programming with R. This will involve __loops__, __if__ statements, and creating your own __functions__.  However, before carrying out some programming we will look at R's __recycle rule__
 
 ## Recycle rule
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
@@ -42,7 +42,7 @@ Depending on the length of the large __vector__ the __elements__ of the smaller 
 - The 1st __element__ of the smaller __vector__ would be used twice (recycled once).
 - The 2nd & 3rd __elements__ of the smaller __vector__ would be used once (not recycled).
 
-Below is a quick example of this. You should notice a warning is printed out as the length of the __objects__ are not multiples of each other. However, above the error is the correct output.
+Below is a quick example of this. You should notice a warning is printed out as the length of the __objects__ are not multiples of each other. However, above the warning is the correct output.
 ```{r eval=FALSE}
 1:3 * rep(1,4)
 ```
@@ -192,7 +192,7 @@ for (c in 1:ncol(mult_prop_col_mat)) {
 #check new matrix
 mult_prop_col_mat
 
-#We'll do the sam again but for each row
+#We'll do the same again but for each row
 #This time with no annotation
 mult_prop_row_mat <- multiplication_mat
 for (r in 1:nrow(mult_prop_row_mat)) {
@@ -245,7 +245,7 @@ i
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/flow_chart.png", auto_pdf = TRUE)
 ``` 
-__If statments__ allow for different commands to be carried out depending on __if__ a condition is met. 
+__If statements__ allow for different commands to be carried out depending on __if__ a condition is met. 
 
 This can be thought of like a flow chart where you go one way if you answer yes and another if you answer no. Example:
 
@@ -292,7 +292,7 @@ for (i in 0:9) {
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/custon_function.png", auto_pdf = TRUE)
 ``` 
-Through out this course we have used many __functions__. However, you may want a __function__ that does not exist. In this case you can create your own.
+Throughout this course we have used many __functions__. However, you may want a __function__ that does not exist. In this case you can create your own.
 
 The format to create your own __function__ is:
 ```{r eval=FALSE}

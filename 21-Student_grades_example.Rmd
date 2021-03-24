@@ -151,7 +151,6 @@ We'll start with creating our __list__ then using a __for loop__ to print out th
 #Create list
 df_lst <- list(group_a_df, group_b_df, group_c_df, group_d_df, group_e_df)
 #Loop through list
-#It is best to loop through 1 to the number of data frames
 for (df in df_lst) {
   #Print the first element of the group name column
   print(df$group[1])
