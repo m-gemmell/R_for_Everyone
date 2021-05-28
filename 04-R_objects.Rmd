@@ -226,13 +226,13 @@ __Data structures__ describe how data is structured in an __object__. We will go
 - __Vectors__ & __Lists__
 - __Matrices__ & __Data frames__
 
-###Scalar
+### Scalar
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/Rscalar.png", auto_pdf = TRUE)
 ``` 
 A __scalar__ consists of one value in an object. This can be one __string__, one __numeric__, one __logical__ etc. We have only been working with __scalars__ thus far but this is about to change. 
 
-###Vectors & Lists
+### Vectors & Lists
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/Rvector.png", auto_pdf = TRUE)
 ``` 
@@ -293,7 +293,7 @@ paste(animals, bird_or_mammal, sep = ":")
 paste(animals, " is a ", bird_or_mammal, sep = "")
 ```
 
-###Data frames & Matrices
+### Data frames & Matrices
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/Rmatrix.png", auto_pdf = TRUE)
 ``` 

@@ -6,7 +6,7 @@ For this exercise simply produce the following tables as __data frames__ in R. P
 
 Tip: You can either write completely new code or reuse and alter previous code. 
 
-##df
+## df
 
 __Note__: The top row is the column names and the left-most column is the row names.
 
@@ -21,7 +21,7 @@ row.names(df) <- row_names
 kable(df)
 ```
 
-##beach_df_2
+## beach_df_2
 
 __Note__: The top row is the column names and the left-most column is the row names.
 

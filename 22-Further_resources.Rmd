@@ -23,13 +23,15 @@ https://rstudio.com/resources/cheatsheets/
 
 __R packages__: https://r-pkgs.org/
 
+__Efficient R Programming__: https://csgillespie.github.io/efficientR/
+
 __R for Data Science__: https://r4ds.had.co.nz/
 
 __R Graphics Cookbook__: https://r-graphics.org/
 
 __Fundamentals of Data Visualization__: https://clauswilke.com/dataviz/
 
-__R BOOKDOWN__ (used ot make this book): https://bookdown.org/
+__R BOOKDOWN__ (used to make this book): https://bookdown.org/
 
 __Hands-On Programming with R__: https://rstudio-education.github.io/hopr/
 
