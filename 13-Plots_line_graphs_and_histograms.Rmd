@@ -1,4 +1,6 @@
-# Week 5 - Plots: Histograms and Line graphs
+# (PART\*) Week 5 {-}
+
+# Plots: Histograms and Line graphs
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/palette.png", auto_pdf = TRUE)
 ```
@@ -239,5 +241,3 @@ legend(x = "topleft",
 ```
 
 That is a good amount to go through. Therefore there is no exercise this week. If you have time read through the above again and possible try to create a histogram or line plot with one of the data sets from previous weeks.
-
-

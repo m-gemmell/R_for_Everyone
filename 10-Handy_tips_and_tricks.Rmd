@@ -1,4 +1,6 @@
-# Week 4 - Handy tips & tricks
+# (PART\*) Week 4 {-}
+
+# Handy tips & tricks
 
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/magic.png", auto_pdf = TRUE)
@@ -24,7 +26,7 @@ __Variable names__ have certain rules that must be followed. We covered these in
 - Cannot contain spaces.
 - Cannot start with a number.
 - Cannot share the same name as a command or function in R.
-- They are case sensitive. The __variable__ name `BB` is differnet to the __variable__ name `bb` which is differnet again to `bB`.
+- They are case sensitive. The __variable__ name `BB` is different to the __variable__ name `bb` which is different again to `bB`.
 
 On top of these rules there are a few naming styles that are recommended. It is very good to choose one naming style and stick with it always. Below are three commonly used naming conventions for R. Look through them and choose your favourite to use.
 
@@ -117,7 +119,7 @@ To get to the RStudio Global Options click "Tools" in the RStudio Toolbar, then 
 knitr::include_graphics(path = "figures/RStudio_global_options.png", auto_pdf = TRUE)
 ```
 
-Have a look through the "General", "Code", and "Appearance" sections. The other sections are more advanced and I would suggets you ignore them currently.
+Have a look through the "General", "Code", and "Appearance" sections. The other sections are more advanced and I would suggests you ignore them currently.
 
 Feel free to click on options in the "Appearance" section to see what they do. If you do not like your choices you can click the "Cancel" button to negate your recent choices and close the window. If you want to save your changes you can click the "Apply" button.
 
@@ -158,7 +160,7 @@ Hopefully you'll find the above useful. We will learn some new __functions__ but
 
 Before looking at the code below can you think of a way to do this?
 
-The code below shows a method to create this __data frame__. I have tried to show you a variety of methods to create the __vectors__ below for demonstration purposes. Look at each command and make sure you understand how they work before continuing. In real life I would use one of these methods rather than many differnet methods.
+The code below shows a method to create this __data frame__. I have tried to show you a variety of methods to create the __vectors__ below for demonstration purposes. Look at each command and make sure you understand how they work before continuing. In real life I would use one of these methods rather than many different methods.
 
 __Tip__: If you double click a word/name in the __script editor__ it will highlight it. You can then start to type to replace the highlighted word.
 
@@ -330,7 +332,7 @@ english_total_vec <- english_df[,3] + english_df[,"As an additional language"]
 #Compare the column of total english speakers against the vector we created above
 #This will create a logical vector (TRUE or FALSE)
 english_total_logical_vec <- english_df$`Total English speakers` == english_total_vec
-#Now create a new data frame by indexxing the english_df rows by the logical vector
+#Now create a new data frame by indexing the english_df rows by the logical vector
 #This will mean all TRUE rows will be kept and all FALSE rows will not be kept
 english_complete_datasets_df <- english_df[english_total_logical_vec,]
 #Remove the vectors we do not need anymore

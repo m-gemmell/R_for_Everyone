@@ -81,7 +81,7 @@ dev.off()
 
 5. Answers for the following questions:
 - Does the linear model have a positive or negative gradient?
-    + __Positive__ (m = 0.4328)6
+    + __Positive__ (m = 0.4328)
 - Which variable (Economy or Family) has higher values?
     + __Economy__
 - If the value of Economy was 2.1 what would be the predictive value of Family according to the linear model equation?

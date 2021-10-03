@@ -38,7 +38,7 @@ Carry out the below tasks:
 2. Create a __data frame__ called "retail_2020_df" containing the rows for 2020 from "uk_retail_df". 
 3. For each month in 2020 print out the phrase "The Food retail index for \<YearMonth> was \<Food>". For example the first phrase will be "The Food retail index for 2020JAN was 101.9". This can be done with one line of code using the `paste()` function.
 4. Make a total row and an average (mean) row for "retail_2020_df". Ensure you are not including the total in the mean.
-5. Finally write out the __data frame__ "retail_2020_df" as a tab seperated file called "UK_retail_2020.tsv".
+5. Finally write out the __data frame__ "retail_2020_df" as a tab separated file called "UK_retail_2020.tsv".
 
 Now that you have carried that out, can you answer the following questions?
 

@@ -1,4 +1,6 @@
-# Week 8 - Basic programming
+# (PART\*) Week 8 {-}
+
+# Basic programming
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/programming.png", auto_pdf = TRUE)
 ``` 

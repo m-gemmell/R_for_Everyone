@@ -15,7 +15,7 @@ penguin_df <- read.csv("penguin.txt",
                       )
 ```
 
-Your plots might not look exactly the same. As long as your plot contains the same data it is good. If you ar enot sure if your plot is correct, feel fre to look at the solutions to look at my code.
+Your plots might not look exactly the same. As long as your plot contains the same data it is good. If you are not sure if your plot is correct, feel free to look at the solutions to look at my code.
 
 ## Line graph
 First we will ignore "penguin_df".
@@ -95,4 +95,3 @@ For the last thing save this plot. Details below:
 
 - Save the file as a jpg called "Penguins_species_and_flipper_length_boxplot.jpg"
 - Save the plot with a width and height of 250 and resolution of 150
-

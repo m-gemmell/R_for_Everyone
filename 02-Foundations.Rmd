@@ -1,4 +1,6 @@
-# Week 1 - Foundations of R
+# (PART\*) Week 1 {-}
+
+# Foundations of R
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/foundational.png", auto_pdf = TRUE)
 ``` 
@@ -67,7 +69,7 @@ There are 3 parts to the above:
     - Cannot contain spaces.
     - Cannot start with a number.
     - Cannot share the same name as a command or function in R.
-    - They are case sensitive. The __variable__ name `BB` is differnet to the __variable__ name `bb` which is differnet again to `bB`. I find it easiest to keep __variable names__ in lower case.
+    - They are case sensitive. The __variable__ name `BB` is different to the __variable__ name `bb` which is different again to `bB`. I find it easiest to keep __variable names__ in lower case.
 - `<-` is called the assignment __operator__. It assigns the __variable object__ to the __variable name__. 
     - Tip you can press 'ALT'+ '-' after a __variable name__ as a shortcut for the assignment __operator__.
 - The __variable object__ (`variable_object`). This can be many differnet objects including the output/results from commands, strings/words, numbers, and many other R data types.

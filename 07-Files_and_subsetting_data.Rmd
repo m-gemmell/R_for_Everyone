@@ -1,4 +1,6 @@
-# Week 3 - Files and subsetting data
+# (PART\*) Week 3 {-}
+
+# Files and subsetting data
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/R_df.png", auto_pdf = TRUE)
 ``` 
@@ -20,7 +22,7 @@ To view the file with RStudio:
 - Click on the file name and then click "View File"
 - This will open a tab in the __Source window__ matching the file name
 
-You will notice that the values are sperarated by commas as this is a "comma seperated value" (.csv) file. Additionally, this is the same data as the "beach_df_2" __data frame__ you created in last week's exercises. 
+You will notice that the values are separated by commas as this is a "comma separated value" (.csv) file. Additionally, this is the same data as the "beach_df_2" __data frame__ you created in last week's exercises. 
 
 There are various __functions__ to __read__ in files into R. My favourite that I find most consistent is `read.csv()`. Use this function to __read__ in the file "Liverpool_beaches.csv":
 ```{r eval=FALSE}
@@ -34,9 +36,9 @@ The row names are empty and the beach names are in the first column. Let us fix 
 liv_beaches_df <- read.csv("Liverpool_beaches.csv", row.names = 1)
 ```
 
-We know how to __read__ in a csv file with `read.csv`, now let us __read__ in a tab seperated file with `read.csv`. As before first look at the file contents before __reading__ them in. It contains the sales figures of fictional clothing stores through the seasons.
+We know how to __read__ in a csv file with `read.csv`, now let us __read__ in a tab separated file with `read.csv`. As before first look at the file contents before __reading__ them in. It contains the sales figures of fictional clothing stores through the seasons.
 
-Now use `read.csv()` to __read__ in the file. We'll set `row.names = 1` again but we will also include the option `sep = "\t"`. This option specifies the columns are sperated (sep) by tabs (`"\t"`).
+Now use `read.csv()` to __read__ in the file. We'll set `row.names = 1` again but we will also include the option `sep = "\t"`. This option specifies the columns are separated (sep) by tabs (`"\t"`).
 
 ```{r eval=FALSE}
 clothing_df <- read.csv("Clothing_stores.txt", row.names = 1, sep = "\t")
@@ -48,7 +50,7 @@ clothing_df <- read.csv("Clothing_stores.txt", row.names = 1,
                         sep = "\t", check.names = FALSE)
 ```
 
-You may want to open excel files with R. Normally to do this I open the file in excel and save it as a .csv or a tab seperated file and __read__ this into R. Alternatively there are R packages that can directly __read__ in excel files. If this is something you would like to do you can look at the following package:
+You may want to open excel files with R. Normally to do this I open the file in excel and save it as a .csv or a tab separated file and __read__ this into R. Alternatively there are R packages that can directly __read__ in excel files. If this is something you would like to do you can look at the following package:
 
 https://readxl.tidyverse.org/
 
@@ -79,7 +81,7 @@ Grand! Now let us subset the __vectors__ with square brackets `[]`.
 
 __Vectors__ are one-dimensional, we therefore provide the square brackets with one number or one range of numbers. The number/s we provide in the square brackets are  the index.
 
-Try out indexxing/subsetting the __vectors__.
+Try out indexing/subsetting the __vectors__.
 
 ```{r eval=FALSE}
 even_seq[2]
@@ -179,7 +181,7 @@ divis_7_vec <- single_digit_vec[(single_digit_vec %% 7) == 0]
 knitr::include_graphics(path = "figures/envelope.png", auto_pdf = TRUE)
 ``` 
 
-__Data frames__ can be subset similar to __vectors__. As with __vectors__ you can use `[]`. Additonally `$` can be used to subset __data frames__.
+__Data frames__ can be subset similar to __vectors__. As with __vectors__ you can use `[]`. Additionally `$` can be used to subset __data frames__.
 
 Square brackets must be provided indexes for rows and for columns. The structure for this is `df[row,column]`. It is very useful to remember that R always wants rows first then columns second.
 

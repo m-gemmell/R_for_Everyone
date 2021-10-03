@@ -17,7 +17,7 @@ The files each contain the columns:
 - __gender__: female or male.
 - __parental level of education__: some high school, high school, associate's degree, some college, bachelor's degree, or master's degree.
 - __lunch__: Whether the student ate free/reduced lunches or standard lunches.
-- __test prepartion course__: Whether the student completed a test prep course (completed) or not (none).
+- __test preparation course__: Whether the student completed a test prep course (completed) or not (none).
 - __math score__: The student's math score.
 - __reading score__: The student's reading score.
 - __writing score__: The student's writing score.

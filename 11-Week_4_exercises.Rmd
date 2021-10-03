@@ -16,7 +16,7 @@ The first task you will carry out is printing out information from "tea_df". Bel
 
 "Turkey is the number 1 consumer of tea. It consumes 5.8kg of tea annually per capita."
 
-Print out this satement for the countries Ireland, United Kingdom, France, and Australia with their relevant information. Make sure the kilogram value only has one decimal place.
+Print out this statement for the countries Ireland, United Kingdom, France, and Australia with their relevant information. Make sure the kilogram value only has one decimal place.
 
 __Tip__: You will require the __functions__ `paste()` and `round()` from week 2 and 1.
 

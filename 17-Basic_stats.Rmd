@@ -1,4 +1,6 @@
-# Week 7 - Basic stats
+# (PART\*) Week 7 {-}
+
+# Basic stats
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/basic_stats.png", auto_pdf = TRUE)
 ``` 
@@ -298,5 +300,3 @@ Below are some further resources you can check that will help if you want to do 
 __Quick-R__: https://www.statmethods.net/index.html
 
 __R Cookbook__: https://rc2e.com/
-
-

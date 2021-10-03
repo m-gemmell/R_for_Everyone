@@ -1,16 +1,18 @@
-# Week 2 - R objects
+# (PART\*) Week 2 {-}
+
+# R objects
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/RObjects.png", auto_pdf = TRUE)
 ``` 
 Last week we learnt how to create a __variable__. This consisted of assigning (`<-`) an __object__ a name. This week we will learn about __R objects__. There are two major R terminologies to learn to fully understand __R objects__.
 
-- __Class__: An __R object__ will have a specific class. The __class__ determines what the __object__ is. It could be numbers, text, or other types of __classess__.
+- __Class__: An __R object__ will have a specific class. The __class__ determines what the __object__ is. It could be numbers, text, or other types of __classes__.
 - __Data structure__: This determines the structure of an __R object__.
 
 Today's plan is to learn about __classes__ and __data structures__.
 
 ## Code sections
-Today, and for the rest of the course, you will use code sections in your R scripts to seperate sections in this book.
+Today, and for the rest of the course, you will use code sections in your R scripts to separate sections in this book.
 
 First set your working directory to the course directory, create a script, and save it as __"Week2_practice.R"__.
 
@@ -135,7 +137,7 @@ It is probably not immediately obvious how useful __logicals__ but you'll see ho
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/string_bubble.png", auto_pdf = TRUE)
 ``` 
-__Strings__ are text and can be modified in R in ways you would normaly want to modify text. They are called __strings__ as they are strings of characters. __Strings__ are flanked by quote marks. Double quotes (`""`) are prefferred but single quotes can also be used (`''`).
+__Strings__ are text and can be modified in R in ways you would normally want to modify text. They are called __strings__ as they are strings of characters. __Strings__ are flanked by quote marks. Double quotes (`""`) are preferred but single quotes can also be used (`''`).
 
 Type and run the below examples to get some practice with __strings__.
 
@@ -196,9 +198,9 @@ paste("The following is a string:", long_string)
 paste(number_string, "is a", word_string)
 #By default paste will put a spaces between each string you provide
 #You can use the sep option to specific your own
-paste("However", " this is seperated by a comma", sep = ",")
-#Or you can make it so there is no seperator
-paste("no seperator",numeric_to_string, sep = "")
+paste("However", " this is separated by a comma", sep = ",")
+#Or you can make it so there is no separator
+paste("no separator",numeric_to_string, sep = "")
 ```
 
 ## Code section continued

@@ -3,6 +3,7 @@ bookdown::gitbook:
   split_by: rmd
   config:
     toc:
+      collapse: section
       before: |
         <li><a>R for everyone</a></li>
       after: |
@@ -11,10 +12,3 @@ bookdown::gitbook:
     download: null
     edit: null
     search: null
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
-bookdown::epub_book: default

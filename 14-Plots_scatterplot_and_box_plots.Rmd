@@ -1,4 +1,6 @@
-# Week 6 - Plots: Scatter plots and Box plots
+# (PART\*) Week 6 {-}
+
+# Plots: Scatter plots and Box plots
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/large_brush.png", auto_pdf = TRUE)
 ```
@@ -379,6 +381,6 @@ boxplot(body_mass_g~species*year ,
 dev.off()
 ```
 
-Super! You can save plots in other file formats and there ar emore options. Check them out with `?png`.
+Super! You can save plots in other file formats and there are more options. Check them out with `?png`.
 
 I hope you are ready to make more plots with the Penguin data because it is time for some exercises.
