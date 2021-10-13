@@ -1,12 +1,12 @@
-# Week 4 - Handy tips & tricks
+# Handy tips & tricks
 
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/magic.png", auto_pdf = TRUE)
 ```
 
-Welcome to week 4! This week will include coding to reinforce what you have learnt up to this point. There will also be plenty of new handy __functions__ and some more concepts to learn.
+Welcome to Chapter 10! This chapter will include coding to reinforce what you have learnt up to this point. There will also be plenty of new handy __functions__ and some more concepts to learn.
 
-For this week create a script called "Week4_practice.R". Remember to use annotations (`#`) and code sections (`####`)!
+For this chapter create directory called "Chapter_10-11" in your main directory and set it as the working directory. Then create a script called "4-Handy_tips.R". Remember to use annotations (`#`) and code sections (`####`)!
 
 However, I'll first introduce you to some R conventions and then some useful abilities of RStudio.
 
@@ -18,13 +18,13 @@ knitr::include_graphics(path = "figures/rules.png", auto_pdf = TRUE)
 R conventions are style guides. You do not need to follow them but they are intended to help make code easier to read. There are lots of different suggestions for different parts of R code. Here we will only look at conventions for __object/variable names__ and wide vs long code formatting.
 
 ### Variable names
-__Variable names__ have certain rules that must be followed. We covered these in week 1 but below is a reminder:
+__Variable names__ have certain rules that must be followed. We covered these in chapter 2 but below is a reminder:
 
 - Must start with a letter.
 - Cannot contain spaces.
 - Cannot start with a number.
 - Cannot share the same name as a command or function in R.
-- They are case sensitive. The __variable__ name `BB` is differnet to the __variable__ name `bb` which is differnet again to `bB`.
+- They are case sensitive. The __variable__ name `BB` is different to the __variable__ name `bb` which is different again to `bB`.
 
 On top of these rules there are a few naming styles that are recommended. It is very good to choose one naming style and stick with it always. Below are three commonly used naming conventions for R. Look through them and choose your favourite to use.
 
@@ -73,11 +73,11 @@ threeFourFive2Vec
 thisIsCamelCase
 ``` 
 
-There are exceptions when you will want to break your naming style such as when creating __vectors__ to be used as columns for a __data frame__.
+There are exceptions when you will want to break your preferred naming style. One such example is when you are creating __vectors__ to be used as columns for a __data frame__.
 
 #### Wide vs Long coding
 
-If a command/__function__ is only on one line then you were using wide coding. This is good with short commands and __functions__ but is not very suitable for longer commands. Below are examples of long commands over one line each.
+If a command/__function__ is only on one line then you were using __wide__ coding. This is good with short commands and __functions__ but is not very suitable for longer commands. Below are examples of long commands over one line each.
 ```{r eval=FALSE}
 #Create a data frame called df
 df <- data.frame(one = c(2,4,6), three = c(6,12,18), five = c(10,20,30), row.names = c("Two", "Four", "Six"))
@@ -85,7 +85,7 @@ df <- data.frame(one = c(2,4,6), three = c(6,12,18), five = c(10,20,30), row.nam
 beach_df_2 <- data.frame(Crab = c(10,1,1,4) ,Oystercatcher = c(5,6,4,4),Sandpiper = c(1,1,2,3) ,Starfish = c(3,3,7,4), row.names = c("Formby","West Kirby","Crosby","New Brighton"))
 ```
 
-Compare the above with the below long coding where arguments are separated by new lines.
+Compare the above with the below __long__ coding where arguments are separated by new lines.
 ```{r eval=FALSE}
 #Create a data frame called df
 df <- data.frame(one = c(2,4,6), 
@@ -112,12 +112,12 @@ RStudio has many useful features which we have not covered. Let us remedy this a
 knitr::include_graphics(path = "figures/global.png", auto_pdf = TRUE)
 ```
 
-To get to the RStudio Global Options click "Tools" in the RStudio Toolbar, then from the drop down menu click "Global Options..". You should see something similar to the below:
-```{r, fig.align = 'center',out.width= '40%', echo=FALSE }
+To get to the RStudio Global Options click "Tools" in the RStudio Toolbar, then from the drop down menu click "Global Options.." . You should see something similar to the below:
+```{r, fig.align = 'center',out.width= '75%', echo=FALSE }
 knitr::include_graphics(path = "figures/RStudio_global_options.png", auto_pdf = TRUE)
 ```
 
-Have a look through the "General", "Code", and "Appearance" sections. The other sections are more advanced and I would suggets you ignore them currently.
+Have a look through the "General", "Code", and "Appearance" sections. The other sections are more advanced and I would suggest you ignore them currently.
 
 Feel free to click on options in the "Appearance" section to see what they do. If you do not like your choices you can click the "Cancel" button to negate your recent choices and close the window. If you want to save your changes you can click the "Apply" button.
 
@@ -130,7 +130,7 @@ Also change the following for later.
 5. Click "Apply" at the bottom followed by "OK".
 
 This will be useful for tab completion which we will cover shortly.
-```{r, fig.align = 'center',out.width= '40%', echo=FALSE }
+```{r, fig.align = 'center',out.width= '75%', echo=FALSE }
 knitr::include_graphics(path = "figures/RStudio_manual_tab.png", auto_pdf = TRUE)
 ```
 
@@ -141,12 +141,12 @@ knitr::include_graphics(path = "figures/sweep.png", auto_pdf = TRUE)
 Sweep buttons allow you to sweep away items you no longer want in RStudio. There are two main sweep buttons, one for the __Console window__ and one for the __Environment pane__.
 
 The sweep button for the __console window__ will clear all the text in the __console pane__. This is useful if you have filled the __console__ with lots of commands and __data frames__. This sweep button will not actually affect any of your work so do not be afraid to use it. The location of the sweep button is shown below.
-```{r, fig.align = 'center',out.width= '40%', echo=FALSE }
+```{r, fig.align = 'center',out.width= '60%', echo=FALSE }
 knitr::include_graphics(path = "figures/RStudio_console_sweep.png", auto_pdf = TRUE)
 ```
 
 The sweep button for the __Environment pane__ is a bit more dangerous. This sweep button will clear all the objects from your environment. This will remove all the __variables__ you have created. This is not too bad if you have been using the __script editor__ to do your work as you can rerun all your commands to refill your environment. The location of the sweep button is shown below.
-```{r, fig.align = 'center',out.width= '40%', echo=FALSE }
+```{r, fig.align = 'center',out.width= '60%', echo=FALSE }
 knitr::include_graphics(path = "figures/RStudio_env_sweep.png", auto_pdf = TRUE)
 ```
 
@@ -154,13 +154,13 @@ knitr::include_graphics(path = "figures/RStudio_env_sweep.png", auto_pdf = TRUE)
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/multiplication.png", auto_pdf = TRUE)
 ```
-Hopefully you'll find the above useful. We will learn some new __functions__ but before that let us create a quick __data frame__. You are going to make a multiplication table. The __data frame__ will be a 10 by 10 table with numbers one to ten as the row names and the column names. The value in each cell/index will be equal to the row name number times the column name number.
+Hopefully you'll find the above useful. We will learn some new __functions__ but before that let us create a quick __data frame__. You are going to make a multiplication table. The __data frame__ will be a 10 by 10 table with numbers one to ten as the row names and the column names. The value in each cell/index will be equal to the row name number multiplied by the column name number.
 
 Before looking at the code below can you think of a way to do this?
 
-The code below shows a method to create this __data frame__. I have tried to show you a variety of methods to create the __vectors__ below for demonstration purposes. Look at each command and make sure you understand how they work before continuing. In real life I would use one of these methods rather than many differnet methods.
+The code below shows a method to create this __data frame__. I have tried to show you a variety of methods to create the __vectors__ below for demonstration purposes. Look at each command and make sure you understand how they work before continuing. In real life I would use one of these methods rather than many different methods.
 
-__Tip__: If you double click a word/name in the __script editor__ it will highlight it. You can then start to type to replace the highlighted word.
+__Tip__: If you double click a word/name in the __script editor__ it will highlight it. You can then start typing to replace the highlighted word.
 
 ```{r eval=FALSE}
 #Vectors that will become columns
@@ -245,7 +245,7 @@ knitr::include_graphics(path = "figures/tea.png", auto_pdf = TRUE)
 ```
 We will have a quick look at the "tea_df". This data shows the annual consumption of tea per capita with a rank based on the highest to lowest consumers.
 
-Unfortunately the third column has the annual per capita consumption in kilograms (KG) and pounds (LB) with the two values seperated by a "_". Thankfully we can use the __function__ `gsub()` to fix this. 
+Unfortunately the third column has the annual per capita consumption in kilograms (KG) and pounds (LB) with the two values separated by a "_". Thankfully we can use the __function__ `gsub()` to fix this. 
 
 `gsub()` will look for a specified pattern and replace it with a specified replacement.
 `gsub()` is only to be used for __strings__.

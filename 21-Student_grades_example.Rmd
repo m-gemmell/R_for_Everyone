@@ -8,7 +8,14 @@ In this section we are going to go through analysing datasets of students grades
 ```{r, fig.align = 'center',out.width= '15%', echo=FALSE }
 knitr::include_graphics(path = "figures/data.png", auto_pdf = TRUE)
 ``` 
-Look in the directory "Week_8_files" and you'll see five files called "student_grades_group_X.tsv" where X is the letters A-E.
+
+Download the five following files into your directory "Chapter_20-21".
+
+- [student_grades_group_A.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_A.tsv)
+- [student_grades_group_B.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_B.tsv)
+- [student_grades_group_C.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_C.tsv)
+- [student_grades_group_D.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_D.tsv)
+- [student_grades_group_E.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_E.tsv)
 
 These files contain the marks secured by USA students in various subjects. The files are separated by anonymised race/ethnicity (groups A-E). 
 
@@ -17,7 +24,7 @@ The files each contain the columns:
 - __gender__: female or male.
 - __parental level of education__: some high school, high school, associate's degree, some college, bachelor's degree, or master's degree.
 - __lunch__: Whether the student ate free/reduced lunches or standard lunches.
-- __test prepartion course__: Whether the student completed a test prep course (completed) or not (none).
+- __test preparation course__: Whether the student completed a test prep course (completed) or not (none).
 - __math score__: The student's math score.
 - __reading score__: The student's reading score.
 - __writing score__: The student's writing score.
@@ -28,9 +35,9 @@ Source of data: https://www.kaggle.com/spscientist/students-performance-in-exams
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/hashtag2.png", auto_pdf = TRUE)
 ``` 
-Before carrying on I would suggest to set your working directory into the directory "Week_8_files".
+Before carrying on I would suggest to set your working directory into the directory "Chapter_20-21".
 
-Now create a new R Script and save it as "student_grades.R" in the "Week_8_files" directory. It is useful to have your scripts close to their relevant data.
+Now create a new R Script and save it as "student_grades.R" in the "Chapter_20-21" directory. It is useful to have your scripts close to their relevant data.
 
 Ensure you use annotations and code sections to keep your script organised and tidy.
 
@@ -62,8 +69,8 @@ summary(group_a_df)
 
 There are three main things we want to do with this __data frame__:
 
-- Change the column names so spaces are underscores. We can carry this out with `gsub()` (Week 4).
-- Change the order of the levels for the column "parental level of education" so they are in order from least to most education. We can do this with the `factor()` __function__ (week 6).
+- Change the column names so spaces are underscores. We can carry this out with `gsub()`.
+- Change the order of the levels for the column "parental level of education" so they are in order from least to most education. We can do this with the `factor()` __function__.
 - Add a group column which will contain the information on what race/ethnicity group each student belongs to. This will contain all the same info for this __data frame__ but it will be useful later on. We are happy for it to be a __character__ column for now.
 
 Let us carry out these tasks:

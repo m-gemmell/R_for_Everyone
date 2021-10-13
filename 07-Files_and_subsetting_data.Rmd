@@ -1,4 +1,6 @@
-# Week 3 - Files and subsetting data
+# (PART\*) Files, Subsetting, & Tips {.unnumbered}
+
+# Files and subsetting data
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/R_df.png", auto_pdf = TRUE)
 ``` 
@@ -8,11 +10,13 @@ knitr::include_graphics(path = "figures/R_df.png", auto_pdf = TRUE)
 knitr::include_graphics(path = "figures/r_read.png", auto_pdf = TRUE)
 ``` 
 
-Last week we created __data frames__ with R __functions__. This was useful to help understand how __data frames__ work in R. However, in real life you will most likely not do this very often. Instead you are more likely going to have data files you need to analyse with R.
+In chapter 4 we created __data frames__ with R __functions__. This was useful to help understand how __data frames__ work in R. However, in real life you will most likely not do this very often. Instead you will have data files you need to analyse with R.
 
 You can get your data into R by having R __read__ your file.
 
-The first task to carry out this week is to __read__ in the file "Liverpool_beaches.csv". Before __reading__ in the file we can check the contents of the file. This can be carried out by opening it with notepad (or similar text tool) or viewing the file with RStudio. 
+Prior to using a file you will need to acquire it. Make a directory/folder called "Chapter_3" within your main directory/folder for this workshop. Download the file [Liverpool_beaches.csv](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/Liverpool_beaches.csv) into "Chapter_3". Next set your working directory to this new directory ([Directories](#directories)). You will stay here for this chapter.
+
+The next task is to carry out is to __read__ in the file "Liverpool_beaches.csv" . Before __reading__ in the file we can check the contents of the file. This can be carried out by opening it with notepad (or similar text tool) or viewing the file with RStudio. 
 
 To view the file with RStudio:
 
@@ -20,7 +24,9 @@ To view the file with RStudio:
 - Click on the file name and then click "View File"
 - This will open a tab in the __Source window__ matching the file name
 
-You will notice that the values are sperarated by commas as this is a "comma seperated value" (.csv) file. Additionally, this is the same data as the "beach_df_2" __data frame__ you created in last week's exercises. 
+You will notice that the values are separated by commas as this is a "comma separated value" (.csv) file. Additionally, this is the same data as the "beach_df_2" __data frame__ you created in the chapter 5 exercises.
+
+__Note__: Create a new R script file called __"3-Files_and_subsetting.r"__ for this chapter's scripts.
 
 There are various __functions__ to __read__ in files into R. My favourite that I find most consistent is `read.csv()`. Use this function to __read__ in the file "Liverpool_beaches.csv":
 ```{r eval=FALSE}
@@ -34,15 +40,16 @@ The row names are empty and the beach names are in the first column. Let us fix 
 liv_beaches_df <- read.csv("Liverpool_beaches.csv", row.names = 1)
 ```
 
-We know how to __read__ in a csv file with `read.csv`, now let us __read__ in a tab seperated file with `read.csv`. As before first look at the file contents before __reading__ them in. It contains the sales figures of fictional clothing stores through the seasons.
+We know how to __read__ in a csv file with `read.csv`, now let us __read__ in the tab separated file, [Census_2011_L_postcodes_counts.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/Census_2011_L_postcodes_counts.csv), with `read.csv`. As before first look at the file contents before __reading__ them in. It contains the sales figures of fictional clothing stores through the seasons.
 
-Now use `read.csv()` to __read__ in the file. We'll set `row.names = 1` again but we will also include the option `sep = "\t"`. This option specifies the columns are sperated (sep) by tabs (`"\t"`).
+Now use `read.csv()` to __read__ in the file. We'll set `row.names = 1` again but we will also include the option `sep = "\t"`. This option specifies the columns are separated (sep) by tabs (`"\t"`).
 
 ```{r eval=FALSE}
 clothing_df <- read.csv("Clothing_stores.txt", row.names = 1, sep = "\t")
 ```
 
 Look at the resulting __data frame__ and you will notice the column names have been changed by R. This is annoying but thankfully there is an easy fix. __Read__ in the data again with the inclusion of the parameter `check.names = FALSE`. This will stop the function `read.csv()` from 'checking' and 'fixing' the column names. I always use this option.
+
 ```{r eval=FALSE}
 clothing_df <- read.csv("Clothing_stores.txt", row.names = 1, 
                         sep = "\t", check.names = FALSE)
@@ -79,7 +86,7 @@ Grand! Now let us subset the __vectors__ with square brackets `[]`.
 
 __Vectors__ are one-dimensional, we therefore provide the square brackets with one number or one range of numbers. The number/s we provide in the square brackets are  the index.
 
-Try out indexxing/subsetting the __vectors__.
+Try out indexing/subsetting the __vectors__.
 
 ```{r eval=FALSE}
 even_seq[2]
@@ -124,6 +131,7 @@ mean(even_seq[2:7])
 ```
 
 Above we subsetted __vectors__ by specifying which indexes we want. We can also specify which indexes we don't want:
+
 ```{r eval=FALSE}
 even_seq[-2]
 odd_seq[-3:-5]
@@ -145,6 +153,7 @@ __Logical__ __operators__ can be used as indexes to subset __vectors__. Having a
 
 
 __Tip__: If it is difficult to deduce what the below commands are doing you can run the part in the square brackets by itself. Remember if you highlight code in the __script editor__ it will only run that part, including parts of script in the same line.
+
 ```{r eval=FALSE}
 even_seq > 3
 even_seq[even_seq  > 2]
@@ -179,11 +188,11 @@ divis_7_vec <- single_digit_vec[(single_digit_vec %% 7) == 0]
 knitr::include_graphics(path = "figures/envelope.png", auto_pdf = TRUE)
 ``` 
 
-__Data frames__ can be subset similar to __vectors__. As with __vectors__ you can use `[]`. Additonally `$` can be used to subset __data frames__.
+__Data frames__ can be subset similar to __vectors__. As with __vectors__ you can use `[]`. Additionally, `$` can be used to subset __data frames__.
 
 Square brackets must be provided indexes for rows and for columns. The structure for this is `df[row,column]`. It is very useful to remember that R always wants rows first then columns second.
 
-To practice subsetting __data frames__ with square brackets we will __read__ in a new file called "Census_2011_L_postcodes.csv". This contains UK 2011 census information on total residents for postcodes that start with the letter L. Data can be found:
+To practice subsetting __data frames__ with square brackets we will __read__ in a new file called - [Clothing_stores.txt](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/Clothing_stores.txt). This contains UK 2011 census information on total residents for postcodes that start with the letter L. Data can be found:
 
 https://www.nomisweb.co.uk/census/2011/postcode_headcounts_and_household_estimates
 
@@ -196,7 +205,7 @@ Now for some subset commands:
 ```{r eval=FALSE}
 #Scalar from the 1st row and 1st column
 L_2011_census_df[1,1]
-#Row names and column names can be used for indexxing
+#Row names and column names can be used for indexing
 #Scalar from the row called L10 1LD: E00033706 and the column called Area
 L_2011_census_df["L10 1LD","Area"]
 #More examples
@@ -211,13 +220,13 @@ L_2011_census_df[c(1,3,5,6),c("Total","Occupied_Households")]
 Depending on how you subset a __data frame__ you may get a __scalar__, __vector__, or __data frame__. Below describes which you will get based on the subsetting.
 
 - __Scalar__: 
-    - Indexxing to get a single value by choosing one row and one column.
+    - Indexing to get a single value by choosing one row and one column.
     - E.g. `L_2011_census_df[1,1]`
 - __Vector__:
-    - Indexxing so you get multiple values from one column. This occurs as each column is in essence a __vector__.
+    - Indexing so you get multiple values from one column. This occurs as each column is in essence a __vector__.
     - E.g. `L_2011_census_df[1:10,2]`
 - __Data frame__:
-    - Indexxing so you get multiple values from a row or multiple rows. Subsetting a __data frame__ like this provides you a __data frame__.
+    - Indexing so you get multiple values from a row or multiple rows. Subsetting a __data frame__ like this provides you a __data frame__.
     - E.g. `L_2011_census_df[3,2:4]` or `L_2011_census_df[3:4,2:4]`
 
 A quick __function__ to subset a __data frame__ is `head()`. By default it will return the first 6 rows.

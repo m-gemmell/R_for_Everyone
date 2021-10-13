@@ -3,14 +3,15 @@ bookdown::gitbook:
   split_by: rmd
   config:
     toc:
+      collapse: section
       before: |
-        <li><a>R for everyone</a></li>
+        <li class="toc-logo"><a href="https://neof.org.uk/" target="blank"><img src="figures/neof_small_logo.png"></a></li>
+        <li><a>Intro to R</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     sharing: null
     download: null
     edit: null
-    search: null
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
