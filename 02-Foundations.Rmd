@@ -16,9 +16,9 @@ The section will end showing you some ways to use RStudio and the __script edito
 knitr::include_graphics(path = "figures/calculator.png", auto_pdf = TRUE)
 ``` 
 
-__Operators__ are symbols in R that allow you to carry out many common tasks. The 3 main types of __operators__ in R are arithmetic, logical, and bitwise. We will ignore logical and bitwise and have a look at some arthimetic __operators__. 
+__Operators__ are symbols in R that allow you to carry out many common tasks. The 3 main types of __operators__ in R are arithmetic, logical, and bitwise. We will ignore logical and bitwise and have a look at some arithmetic __operators__. 
 
-The four most commonly used arthimetic __operators__ are:
+The four most commonly used arithmetic __operators__ are:
 
 - `+` : Addition
 - `-` : Minus
@@ -71,12 +71,12 @@ There are 3 parts to the above:
     - Cannot contain spaces.
     - Cannot start with a number.
     - Cannot share the same name as a command or function in R.
-    - They are case sensitive. The __variable__ name `BB` is differnet to the __variable__ name `bb` which is differnet again to `bB`. I find it easiest to keep __variable names__ in lower case.
+    - They are case sensitive. The __variable__ name `BB` is different to the __variable__ name `bb` which is different again to `bB`. I find it easiest to keep __variable names__ in lower case.
 - `<-` is called the assignment __operator__. It assigns the __variable object__ to the __variable name__. 
     - Tip you can press 'ALT'+ '-' after a __variable name__ as a shortcut for the assignment __operator__.
-- The __variable object__ (`variable_object`). This can be many differnet objects including the output/results from commands, strings/words, numbers, and many other R data types.
+- The __variable object__ (`variable_object`). This can be many different objects including the output/results from commands, strings/words, numbers, and many other R data types.
 
-A __variable__ can be thought of as a box. The __variable object__ is held in the box but it can be replaced with any another object. The __variable name__ can then be thought as the label on the box so you can tell which box is which.
+A __variable__ can be thought of as a box. The __variable object__ is held in the box but it can be replaced with any other object. The __variable name__ can then be thought as the label on the box so you can tell which box is which.
 
 Type the below commands into the RStudio __console__.
 
@@ -236,7 +236,7 @@ You can run a command that is in the script editor by one of the two following w
 
 Run the commands you currently have in your __script editor__.
 
-The __script editor__ is unaffected with only the cursor moving if you used the cursor method. Instead what is actually happening is your commands are being copied to the __console window__ and are being run there.
+The __script editor__ is unaffected with only the cursor moving if you used the cursor method. What is actually happening is that your commands are being copied to the __console window__ and are being run there.
 
 I would encourage to primarily use the script editor to write your code. It is brilliant for editing, reusing, and documenting your code.
 
@@ -250,7 +250,7 @@ Annotations can be added to your code in the __script editor__. If a line starts
 
 Be a mate, annotate.
 
-Edit the contents of your __script editor__ so it looks like below. Then run all the lines.
+Edit the contents of your __script editor__ so it looks like the below. Then run all the lines.
 
 __Tip__: If you have selected the __script editor__ you can use __"Ctrl"__ + __"a"__ to highlight all.
 

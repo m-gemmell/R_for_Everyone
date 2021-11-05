@@ -64,7 +64,7 @@ Create a __variable__ with the __name__ "pie"" containing the __numeric__ 3.14:
 pie <- 3.14
 ```
 
-Use the __functions__ `as.numeric()`, `as.integer()`, `as.double()` to print the __variable__ as a __numeric__, as an __integer__, and as a __double__:
+Use the __functions__ `as.numeric()`, `as.integer()`, and `as.double()` to print the __variable__ as a __numeric__, as an __integer__, and as a __double__:
 ```{r eval=FALSE}
 #Printing out previously made variable as numeric, integer, and double
 as.numeric(pie)
@@ -130,7 +130,7 @@ Note: when `!` is used in __operators__ it means "not". When used, `!` always go
 2 != 4
 ```
 
-It is probably not immediately obvious how useful __logicals__ are but you'll see how they are later in the course.
+It is probably not immediately obvious how useful __logicals__ are, but you'll see their usefulness later in the course.
 
 ### String
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
@@ -194,12 +194,15 @@ You can use certain __logical operators__ to compare __strings__ though:
 The __paste() function__ is very useful to combine two or more __strings__ into one.
 ```{r eval=FALSE}
 paste("The following is a string:", long_string) 
-paste(number_string, "is a", word_string)
-#By default paste will put a spaces between each string you provide
-#You can use the sep option to specific your own
-paste("However", " this is seperated by a comma", sep = ",")
+paste(number_string, "and the", word_string)
+#By default paste will put a space (sep = " ") between each string you provide
+#You can use the sep option to specify your own
+paste("However", " this is separated by a comma", sep = ",")
 #Or you can make it so there is no separator
-paste("no seperator",numeric_to_string, sep = "")
+paste("no separator",numeric_to_string, sep = "")
+#Alternatively you can use paste0()
+#Where there is no separator by default (sep ="")
+paste0("no separator",numeric_to_string)
 ```
 
 ## Code section continued
@@ -304,7 +307,7 @@ knitr::include_graphics(path = "figures/Rmatrix.png", auto_pdf = TRUE)
 
 __Data frames__ & __matrices__ are 2-dimensional data structures as they have rows and columns.
 
-A __matrix__ only contains 1 __class__ (homogeneous). A __data frame__ can contain multiple classes (heterogeneous), but each column can only contain one __class__. 
+A __matrix__ only contains 1 __class__ (homogeneous). A __data frame__ can contain multiple __classes__ (heterogeneous), but each column can only contain one __class__. 
 
 Most of the time __data frames__ and __matrices__ can be treated the same. Because of this I generally use __data frames__ and so we will focus on them.
 
