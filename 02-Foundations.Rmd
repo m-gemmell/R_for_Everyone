@@ -182,7 +182,7 @@ There are two main ways to set your working directory.
     3. Click __"Choose Directory.."__
     4. Use the pop-up browser to choose a directory
 
-2. Via the __MISC window__ (bottom left)
+2. Via the __MISC window__ (bottom right)
     1. Click the __Files pane__
     2. Navigate to the directory you would like to set as the working directory
     3. On the __MISC toolbar__ click __"More"__

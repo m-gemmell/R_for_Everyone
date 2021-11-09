@@ -82,7 +82,7 @@ If a command/__function__ is only on one line then you were using __wide__ codin
 #Create a data frame called df
 df <- data.frame(one = c(2,4,6), three = c(6,12,18), five = c(10,20,30), row.names = c("Two", "Four", "Six"))
 #Create a data frame called beach_df_2
-beach_df_2 <- data.frame(Crab = c(10,1,1,4) ,Oystercatcher = c(5,6,4,4),Sandpiper = c(1,1,2,3) ,Starfish = c(3,3,7,4), row.names = c("Formby","West Kirby","Crosby","New Brighton"))
+beach_df_2 <- data.frame(Crab = c(10,1,1,4), Oystercatcher = c(5,6,4,4), Sandpiper = c(1,1,2,3), Starfish = c(3,3,7,4), row.names = c("Formby","West Kirby","Crosby","New Brighton"))
 ```
 
 Compare the above with the below __long__ coding where arguments are separated by new lines.
@@ -200,7 +200,12 @@ Tab completion is a very useful method when coding in any language. It takes som
 
 Before we continue, the tab key is the key above the "CAPS" key and left of the 'q' key. If you would like a demonstration of tab completion please ask!
 
-The first way to tab complete is to tab complete file names. First set your working directory to the "Tea" directory in the "Week_4_files" directory you downloaded and unzipped for this week. Then you will run the below command. However, when your cursor is in the double quotes first press tab. This will hopefully show a dropdown of selections. There are two ways to then get to your choice:
+The first way to tab complete is to tab complete file names. First you will need to download the following files into your “Chapter_10-11” directory.
+
+- [tea_consumption.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/tea_consumption.csv)
+- [english_speaking_population_of_countries.txt](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/english_speaking_population_of_countries.txt)
+
+Next you will run the command that is below. However, when your cursor is in the double quotes first press tab. This will hopefully show a dropdown of selections. There are two ways to then get to your choice:
 
 1. Use the up and down arrow keys to move to the file name you want and then press enter to have the file name be autofilled.
 2. Start typing your file name till it is the top choice of the drop down menu. You can then press enter to autofill the file name.
@@ -213,8 +218,7 @@ tea_df <- read.csv("tea_consumption.csv", check.names=FALSE)
 
 You may notice that we only provided the file name and the `check.names=FALSE` for the `read.csv()` __function__. This is because of the format of the input file. In this case we do not want any of the input columns converted into row names. Additionally, the file was comma separated and the default separator to be used for `read.csv()` is commas. We will come back to this __data frame__ so either keep the __variable__ in your __environment__ or keep the __read__ code handy.
 
-Let us __read__ in another file using tab complete to autofill the file name again. You will need to set your working directory to the "Lanuguage" directory in your "Week_4_files" directory first.
-
+Let us __read__ in another file using tab complete to autofill the file name again. 
 ```{r eval=FALSE}
 english_df <- read.csv("english_speaking_population_of_countries.txt", 
                    sep = "\t", 
@@ -315,7 +319,7 @@ Now we will do some processing of the "english_df" __data frame__. This shows th
 There are a lot of NA values. Looking at the values in the __data frame__ try to figure out the two reasons that these NA values are present. Once you have had a thought you can have a look at the below two reasons.
 
 1. Some countries have zero population of English first speakers and some countries have zero population of people who speak English as an additional language.
-2. Some countries are missing data on the number of first and additional speakers, eg. Ukraine.
+2. Some countries are missing data on the number of first and additional speakers, e.g.. Ukraine.
 
 We will fix these issues one by one. First let us change all NAs to the number 0. The below method requires a lot of R knowledge to understand. I admit I do not fully understand it and I googled to find the answer. In this case the important part is that it works and it is a very short command.
 ```{r eval=FALSE}
@@ -330,10 +334,10 @@ english_total_vec <- english_df[,3] + english_df[,"As an additional language"]
 #Compare the column of total english speakers against the vector we created above
 #This will create a logical vector (TRUE or FALSE)
 english_total_logical_vec <- english_df$`Total English speakers` == english_total_vec
-#Now create a new data frame by indexxing the english_df rows by the logical vector
+#Now create a new data frame by indexing the english_df rows by the logical vector
 #This will mean all TRUE rows will be kept and all FALSE rows will not be kept
 english_complete_datasets_df <- english_df[english_total_logical_vec,]
-#Remove the vectors we do not need anymore
+#Remove the vectors we do not need any more
 rm(english_total_vec,english_total_logical_vec)
 
 #2nd method is to carry out the above all in one command

@@ -33,4 +33,4 @@ Next save the script, ensuring it is called __"Exercises.R"__"
 
 Finally, close your script by clicking the __"x"__" icon on the tab of the script.
 
-That is the end of Foundations of R! If you have any questions please ask and we am more than happy to try to answer.
+That is the end of Foundations of R! If you have any questions please ask and we are more than happy to try to answer.

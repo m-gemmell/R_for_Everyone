@@ -7,7 +7,7 @@ In Chapter 2 we learnt how to create a __variable__. This consisted of assigning
 - __Class__: An __R object__ will have a specific class. The __class__ determines what the __object__ is. It could be numbers, text, or other types of __classes__.
 - __Data structure__: This determines the structure of an __R object__.
 
-Today's plan is to learn about __classes__ and __data structures__.
+The rest of today's plan is to learn about __classes__ and __data structures__.
 
 ## Code sections
 Today, and for the rest of the course, you will use code sections in your R scripts to separate sections in this book.
@@ -265,7 +265,7 @@ birds <- animals[5]
 birds
 aquatic <- animals[1:2]
 aquatic
-rodents <- animals[c(3,6,7)]
+rodents <- animals[c(4,6,7)]
 rodents
 mammals <- animals[-5]
 mammals
