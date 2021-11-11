@@ -3,7 +3,7 @@
 knitr::include_graphics(path = "figures/exercises.png", auto_pdf = TRUE)
 ```
 
-There has been a lot covered this week so these exercises will hopefully be straightforward.
+There has been a lot covered this session so these exercises will hopefully be straightforward.
 
 Please set the working directory to your main workshop directory and use your "Exercises.R" script. Ensure you are using annotations and code sections to keep the contents clear and separated.
 
@@ -20,7 +20,7 @@ The first task you will carry out is printing out information from "tea_df". Bel
 
 Print out this statement for the countries Ireland, United Kingdom, France, and Australia with their relevant information. Make sure the kilogram value only has one decimal place.
 
-__Tip__: You will require the __functions__ `paste()` and `round()` from week 2 and 1.
+__Tip__: You will require the __functions__ `paste()` and `round()` from day 1.
 
 ## English speakers across the world exercise
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
@@ -68,7 +68,7 @@ knitr::include_graphics(path = "figures/multiplication.png", auto_pdf = TRUE)
 ```
 If you still have time this session and you do not have any questions please attempt the following task:
 
-Create a multiplication table like the one in the practice for this week. However have the row and column names equal one to twelve.
+Create a multiplication table like the one in the practice from today. However have the row and column names equal one to twelve.
 
 Then __write__ the __data frame__ to a file. The name and format of the file is up to you.
 

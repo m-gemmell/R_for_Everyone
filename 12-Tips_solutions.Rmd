@@ -25,7 +25,7 @@ First create a __vector__ with the names of the countries we want:
 countries <- c("Ireland", "United Kingdom", "France", "Australia")
 ```
 
-Set the row names to the countries for easy indexxing:
+Set the row names to the countries for easy indexing:
 
 __Note__: Row name must be unique which is the case here.
 ```{r eval=FALSE}
