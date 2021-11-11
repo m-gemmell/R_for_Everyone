@@ -39,34 +39,34 @@ knitr::include_graphics(path = "figures/UKPounds.png", auto_pdf = TRUE)
 
 Read in file:
 ```{r eval=FALSE}
-retail_df <- read.csv("Chapter_8_files/UK_retail.txt", sep = "\t", row.names = 1, check.names = FALSE)
+uk_retail_df <- read.csv("Chapter_8_files/UK_retail.txt", sep = "\t", row.names = 1, check.names = FALSE)
 ```
 
 Create 2020 __data frame__:
 Read in file:
 ```{r eval=FALSE}
 #Can index to get the desired columns
-retail_2020_df <- retail_df[29:37,]
+uk_retail_2020_df <- uk_retail_df[29:37,]
 #Alternatively the tail() function can be used
 #It is like head() but will get lowest rows
-retail_2020_df <- tail(retail_df, n = 9)
+uk_retail_2020_df <- tail(uk_retail_df, n = 9)
 ```
 
 Print food index phrases:
 ```{r eval=FALSE}
-paste("The Food retail index for", row.names(retail_2020_df),
-      "was", retail_2020_df$Food, 
+paste("The Food retail index for", row.names(uk_retail_2020_df),
+      "was", uk_retail_2020_df$Food, 
       sep = " ")
 ```
 
 Total and mean rows:
 ```{r eval=FALSE}
-retail_2020_df["Total",] <- colSums(retail_2020_df)
-retail_2020_df["Average",] <- colMeans(head(retail_2020_df, n = 9))
+uk_retail_2020_df["Total",] <- colSums(uk_retail_2020_df)
+uk_retail_2020_df["Average",] <- colMeans(head(uk_retail_2020_df, n = 9))
 ```
 
 Write out file:
 ```{r eval=FALSE}
-write.table(retail_2020_df, "Chapter_8_files/UK_retail_2020.tsv", 
+write.table(uk_retail_2020_df, "Chapter_8_files/UK_retail_2020.tsv", 
             sep = "\t", col.names = NA, quote = FALSE)
 ```

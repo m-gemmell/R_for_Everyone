@@ -157,7 +157,7 @@ getwd()
 
 - Set working directory. The path of the directory must be in quotes like below. If you do run the below command make sure the path exists in your computer, as I am the sure the example below will not. 
 ```{r eval=FALSE}
-setwd("/path/of/directory"")
+setwd("/path/of/directory")
 ``` 
 
 - List the files in the current directory:
