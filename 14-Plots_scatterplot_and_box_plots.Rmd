@@ -196,7 +196,7 @@ months_factor_vec
 levels(months_factor_vec)
 ```
 
-Know let us make a nice scatter plot of the animal data with points coloured by Biom and shaped (`pch =`) by Group.
+Now let us make a nice scatter plot of the animal data with points coloured by Biom and shaped (`pch =`) by Group.
 ```{r eval=FALSE}
 #Plot
 plot(x = animal_df$`Average mass (tonnes)`,
@@ -273,7 +273,7 @@ Below is the command for this:
 boxplot(body_mass_g~species, data = penguin_df)
 ```
 
-What is we want to split the 3 box plots into sex? 
+What if we want to split the 3 box plots into sex? 
 
 We can do that like below:
 ```{r eval=FALSE}
@@ -334,11 +334,11 @@ To save a plot to a file you can use the __functions__ `png()` and `dev.off()`.
 
 The __function__ `png()` goes before all the plotting commands. It has various options but the ones we will use are:
 
--`filename =`: Provide this with a string that will be the file filename of the resulting file.
--`units =`: The units the width and height will be in. the default is "px" for pixels but I like to go for "mm" for millimetres.
--`width =`: The width of the plot in the file.
--`height =`: The height of the plot in the file.
-- `res =`: Resolution of the plot. Usually a number between 50 and 300 with 300 being better quality. This number referes to dpi (dots per inch). 
+- `filename =`: Provide this with a string that will be the filename of the resulting file.
+- `units =`: The units the width and height will be in. the default is "px" for pixels but I like to go for "mm" for millimetres.
+- `width =`: The width of the plot in the file.
+- `height =`: The height of the plot in the file.
+- `res =`: Resolution of the plot. Usually a number between 50 and 300 with 300 being better quality. This number refers to dpi (dots per inch). 
 
 After the `png()` and plotting __functions__ you use the __function__ `dev.off()`. This lets R know you are finished plotting and so the file from `png()` will be created.
 
@@ -385,6 +385,6 @@ boxplot(body_mass_g~species*year ,
 dev.off()
 ```
 
-Super! You can save plots in other file formats and there ar emore options. Check them out with `?png`.
+Super! You can save plots in other file formats and there are more options. Check them out with `?png`.
 
 I hope you are ready to make more plots with the Penguin data because it is time for some exercises.

@@ -91,7 +91,7 @@ To save the plot the code is:
 ```{r eval=FALSE}
 #Start png function
 jpeg(filename = "Chapter_13-16/Penguins_species_and_flipper_length_boxplot.jpg",
-    units = "mm", height = 250, width = 250, res = 150 )
+    units = "mm", height = 250, width = 300, res = 150 )
 #Produce boxplot
 boxplot(flipper_length_mm~sex*species,
         data = penguin_df,

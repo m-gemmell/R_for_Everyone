@@ -66,7 +66,7 @@ hist(eu_df$eu_pop, col = "purple",
 
 We have a similar pattern as with the number of cities (most have low numbers, some high numbers). 
 
-We can quickly check if the countries with the high number of cities also have the high populations by creating a new column equal to population / number of cities. This will give is nice ratios. We can plot the distribution of these ratios in a histogram.
+We can quickly check if the countries with the high number of cities also have the high populations by creating a new column equal to population / number of cities. This will give us nice ratios. We can plot the distribution of these ratios in a histogram.
 
 For this histogram we will also add a title to the plot with the option `main = `. Additionally we will choose a different colour. Having different colours and main titles makes it easier for you to instantly know which plot you are looking at.
 
