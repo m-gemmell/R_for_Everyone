@@ -174,7 +174,7 @@ Numbers on the x axis are not ideal in this case. We will therefore use the `axi
 
 For more info for `axis()` run the command `?axis` to see its help page.
 
-To use the `axis()` __function__ correctly we need to make sure there are no preexisting labels and tick marks on the x axis or else the new labels will go on top of the old. To do this we provide the `plot()` __function__ with the option `naxt ='n'`, i.e. no x axis ticks.
+To use the `axis()` __function__ correctly we need to make sure there are no preexisting labels and tick marks on the x axis or else the new labels will go on top of the old. To do this we provide the `plot()` __function__ with the option `xaxt ='n'`, i.e. no x axis ticks.
 
 ```{r eval=FALSE}
 #Produce line plot of the food sector over time point.
