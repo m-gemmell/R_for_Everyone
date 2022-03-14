@@ -1,12 +1,15 @@
 # (APPENDIX) Appendix {.unnumbered}
-<<<<<<< HEAD
 
 # R user groups and forums
-=======
 
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/internet.png", auto_pdf = TRUE)
 ```
+
+-   <https://jumpingrivers.github.io/meetingsR/r-user-groups.html#europe>
+-   <https://www.r-consortium.org/blog/2019/09/09/r-community-explorer-r-user-groups>
+-   <https://r-dir.com/community/forums.html>
+
 
 # Workshop files {#workshopfiles}
 
@@ -55,38 +58,19 @@ knitr::include_graphics(path = "figures/internet.png", auto_pdf = TRUE)
 7.  Basic stats: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_7_basic_stats.pdf) & video
 8.  Basic programming: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_8_basic_programming.pdf) & video
 
-# R user groups and forums
-
--   <https://jumpingrivers.github.io/meetingsR/r-user-groups.html#europe>
--   <https://www.r-consortium.org/blog/2019/09/09/r-community-explorer-r-user-groups>
--   <https://r-dir.com/community/forums.html>
->>>>>>> master
-
 # Base R books and links
-
-<<<<<<< HEAD
-# Base R books and links
-=======
 **Quick-R**: <https://www.statmethods.net/index.html>
->>>>>>> master
 
 **R Cookbook**: <https://rc2e.com/>
 
 # R cheat sheets
 
-<<<<<<< HEAD
-# R cheat sheets
-=======
 <https://rstudio.com/resources/cheatsheets/>
->>>>>>> master
 
 # Advanced R topics
 
-<<<<<<< HEAD
-# Advanced R topics
-=======
+
 **R packages**: <https://r-pkgs.org/>
->>>>>>> master
 
 **Efficient R Programming**: <https://csgillespie.github.io/efficientR/>
 
@@ -104,10 +88,5 @@ knitr::include_graphics(path = "figures/internet.png", auto_pdf = TRUE)
 
 # Datasets
 
-<<<<<<< HEAD
-# Datasets
-I got a lot of my datasets from Kaggle:
-https://www.kaggle.com/
-=======
-I got a lot of my datasets from Kaggle: <https://www.kaggle.com/>
->>>>>>> master
+I got a lot of my datasets from [Kaggle](https://www.kaggle.com/)
+

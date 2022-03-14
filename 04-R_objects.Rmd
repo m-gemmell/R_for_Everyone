@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# (PART\*) Week 2 {-}
-
-=======
->>>>>>> master
 # R objects
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/RObjects.png", auto_pdf = TRUE)

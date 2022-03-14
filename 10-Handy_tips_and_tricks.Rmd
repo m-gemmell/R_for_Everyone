@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# (PART\*) Week 4 {-}
-
-=======
->>>>>>> master
 # Handy tips & tricks
 
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-# (PART\*) Week 7 {-}
-=======
 # (PART\*) Stats & Programming {.unnumbered}
->>>>>>> master
-
 # Basic stats
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/basic_stats.png", auto_pdf = TRUE)

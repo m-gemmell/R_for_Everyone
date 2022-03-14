@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-# (PART\*) Week 1 {-}
-=======
 # (PART\*) Foundations & Objects {.unnumbered}
->>>>>>> master
-
 # Foundations of R
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/foundational.png", auto_pdf = TRUE)

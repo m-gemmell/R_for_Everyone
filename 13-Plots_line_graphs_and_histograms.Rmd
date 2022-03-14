@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-# (PART\*) Week 5 {-}
-
-# Plots: Histograms and Line graphs
-=======
 # (PART\*) Plots {.unnumbered}
-
 # Histograms and Line graphs
->>>>>>> master
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/palette.png", auto_pdf = TRUE)
 ```

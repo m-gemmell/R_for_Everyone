@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-# (PART\*) Week 6 {-}
-
-# Plots: Scatter plots and Box plots
-=======
-# Scatter plots and Box plots
->>>>>>> master
+# Scatter plots and Box plot
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/large_brush.png", auto_pdf = TRUE)
 ```
