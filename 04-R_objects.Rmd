@@ -1,20 +1,23 @@
+<<<<<<< HEAD
 # (PART\*) Week 2 {-}
 
+=======
+>>>>>>> master
 # R objects
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/RObjects.png", auto_pdf = TRUE)
 ``` 
-Last week we learnt how to create a __variable__. This consisted of assigning (`<-`) an __object__ a name. This week we will learn about __R objects__. There are two major R terminologies to learn to fully understand __R objects__.
+In Chapter 2 we learnt how to create a __variable__. This consisted of assigning (`<-`) an __object__ a name. In this chapter we will learn about __R objects__. There are two major R terminologies to learn to fully understand __R objects__.
 
 - __Class__: An __R object__ will have a specific class. The __class__ determines what the __object__ is. It could be numbers, text, or other types of __classes__.
 - __Data structure__: This determines the structure of an __R object__.
 
-Today's plan is to learn about __classes__ and __data structures__.
+The rest of today's plan is to learn about __classes__ and __data structures__.
 
 ## Code sections
 Today, and for the rest of the course, you will use code sections in your R scripts to separate sections in this book.
 
-First set your working directory to the course directory, create a script, and save it as __"Week2_practice.R"__.
+First set your working directory to the course directory, create a script, and save it as __"2-Objects.R"__.
 
 Next create a code section at the top of this script called __"Classes"__.
 
@@ -32,7 +35,7 @@ The four we will learn are:
 - __Integer__
 - __Double__
 - __String__
-- __Logical__. 
+- __Logical__
 
 There are also the classes __complex__ and __raw__.
 
@@ -40,6 +43,7 @@ There are also the classes __complex__ and __raw__.
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/numbers.png", auto_pdf = TRUE)
 ``` 
+
 __Numeric__ __classes__ come in two types, __integer__ and __double__. __Integers__ and __doubles__ are almost identical. However, __doubles__ contain decimal point information whilst __integers__ do not. 
 
 Most of the time you will only need to know if your data is __numeric__ and you will not need to worry about __doubles__ or __integers__. The exception being if you are working with decimals and your decimals are not showing up. This probably means that your __object__ has the __integer class__.
@@ -65,7 +69,7 @@ Create a __variable__ with the __name__ "pie"" containing the __numeric__ 3.14:
 pie <- 3.14
 ```
 
-Use the __functions__ `as.numeric()`, `as.integer()`, `as.double()` to print the __variable__ as a __numeric__, as an __integer__, and as a __double__:
+Use the __functions__ `as.numeric()`, `as.integer()`, and `as.double()` to print the __variable__ as a __numeric__, as an __integer__, and as a __double__:
 ```{r eval=FALSE}
 #Printing out previously made variable as numeric, integer, and double
 as.numeric(pie)
@@ -123,15 +127,15 @@ Note: when `!` is used in __operators__ it means "not". When used, `!` always go
 2 > 4
 # 2 less than or equal to 4
 2 <= 4
-# greater than or equal
+# 2 greater than or equal to 4
 2 >= 4
-# equal
+# 2 equal to 4
 2 == 4
-# not equal
+# 2 not not equal to 4
 2 != 4
 ```
 
-It is probably not immediately obvious how useful __logicals__ but you'll see how they are later in the course.
+It is probably not immediately obvious how useful __logicals__ are, but you'll see their usefulness later in the course.
 
 ### String
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
@@ -195,12 +199,24 @@ You can use certain __logical operators__ to compare __strings__ though:
 The __paste() function__ is very useful to combine two or more __strings__ into one.
 ```{r eval=FALSE}
 paste("The following is a string:", long_string) 
+<<<<<<< HEAD
 paste(number_string, "is a", word_string)
 #By default paste will put a spaces between each string you provide
 #You can use the sep option to specific your own
 paste("However", " this is separated by a comma", sep = ",")
 #Or you can make it so there is no separator
 paste("no separator",numeric_to_string, sep = "")
+=======
+paste(number_string, "and the", word_string)
+#By default paste will put a space (sep = " ") between each string you provide
+#You can use the sep option to specify your own
+paste("However", " this is separated by a comma", sep = ",")
+#Or you can make it so there is no separator
+paste("no separator",numeric_to_string, sep = "")
+#Alternatively you can use paste0()
+#Where there is no separator by default (sep ="")
+paste0("no separator",numeric_to_string)
+>>>>>>> master
 ```
 
 ## Code section continued
@@ -229,7 +245,7 @@ __Data structures__ describe how data is structured in an __object__. We will go
 - __Matrices__ & __Data frames__
 
 ### Scalar
-```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
+```{r, fig.align = 'center',out.width= '15%', echo=FALSE }
 knitr::include_graphics(path = "figures/Rscalar.png", auto_pdf = TRUE)
 ``` 
 A __scalar__ consists of one value in an object. This can be one __string__, one __numeric__, one __logical__ etc. We have only been working with __scalars__ thus far but this is about to change. 
@@ -238,13 +254,15 @@ A __scalar__ consists of one value in an object. This can be one __string__, one
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/Rvector.png", auto_pdf = TRUE)
 ``` 
-A __R object__ can hold multiple values.Many __data__ structures can do this with the simplest being a __vector__.
+
+A __R object__ can hold multiple values. Many __data__ structures can do this with the simplest being a __vector__.
 
 A __vector__ can be created with the `c()` __function__. This function will combine the provided objects into a single __vector__ or __list__.
 
 __Vectors__ and __lists__ are both 1-dimensional __data structures__. __Vectors__ can only contain one __class__ (homogeneous) whilst __lists__ can contain multiple (heterogeneous). There is more to __lists__ but we will not go into them.
 
 Run the following commands to produce __variables__ which contain __vectors__.
+
 ```{r eval=FALSE}
 number_vec <- c(1,2,4,8,16)
 number_vec
@@ -255,12 +273,13 @@ animals
 ```
 
 Elements of a __vector__ can be accessed through their indices:
+
 ```{r eval=FALSE}
 birds <- animals[5]
 birds
 aquatic <- animals[1:2]
 aquatic
-rodents <- animals[c(3,6,7)]
+rodents <- animals[c(4,6,7)]
 rodents
 mammals <- animals[-5]
 mammals
@@ -302,7 +321,7 @@ knitr::include_graphics(path = "figures/Rmatrix.png", auto_pdf = TRUE)
 
 __Data frames__ & __matrices__ are 2-dimensional data structures as they have rows and columns.
 
-A __matrix__ only contains 1 __class__ (homogeneous). A __data frame__ can contain multiple classes (heterogenous), but each column can only contain one __class__. 
+A __matrix__ only contains 1 __class__ (homogeneous). A __data frame__ can contain multiple __classes__ (heterogeneous), but each column can only contain one __class__. 
 
 Most of the time __data frames__ and __matrices__ can be treated the same. Because of this I generally use __data frames__ and so we will focus on them.
 
@@ -316,6 +335,7 @@ mtcars
 
 To get a better look save the __data frame__ as a __variable__.
 The above shows the info in the __console window__. However we can have a better look at it in RStudio if we save it as a variable in our __environment__ and then click the variable on the __Environment pane__ of the __"environment and history"__ __window__.
+
 ```{r eval=FALSE}
 cars_info <- mtcars
 ```
@@ -323,6 +343,7 @@ cars_info <- mtcars
 Now the __variable__ will be listed in your __Environment pane__ in the __"environment and history" window__ . Click on the name "cars_info" in the __Environment pane__. A tab in your __script editor__ will open so you can have a good look at the contents of the __data frame__.
 
 When you are ready, close the "cars_info" tab and remove the __variable__ with the below command.
+
 ```{r eval=FALSE}
 rm(cars_info)
 ```
@@ -330,13 +351,15 @@ rm(cars_info)
 Now it is time to create our own __data frame__.
 
 First we will create three __variables__ containing __vectors__. These will be our three columns.
+
 ```{r eval=FALSE}
 Crab <- c(10,1,1)
 Oystercatcher <- c(5,6,4)
 Starfish <- c(3,3,7)
 ```
 
-Now let us create the __data frame__. 
+Now let us create the __data frame__.
+
 ```{r eval=FALSE}
 #Using the function data.frame to create a data frame
 beach_df <- data.frame(Crab,Oystercatcher,Starfish)
@@ -344,7 +367,7 @@ beach_df <- data.frame(Crab,Oystercatcher,Starfish)
 
 Look at the __variable__ "beach_df" (it is useful to use "df" in __variable names__ to signify it is a __data frame__) and you will see that each __vector__ has become a column. The __variable names__ have become the column names (this is why we used capital letters in the __variable names__).
 
-You can think of __data frames__ in three differnet ways:
+You can think of __data frames__ in three different ways:
 
 - A list of columns
 - A list of rows

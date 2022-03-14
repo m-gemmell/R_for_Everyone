@@ -1,14 +1,17 @@
+<<<<<<< HEAD
 # (PART\*) Week 4 {-}
 
+=======
+>>>>>>> master
 # Handy tips & tricks
 
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/magic.png", auto_pdf = TRUE)
 ```
 
-Welcome to week 4! This week will include coding to reinforce what you have learnt up to this point. There will also be plenty of new handy __functions__ and some more concepts to learn.
+Welcome to Chapter 10! This chapter will include coding to reinforce what you have learnt up to this point. There will also be plenty of new handy __functions__ and some more concepts to learn.
 
-For this week create a script called "Week4_practice.R". Remember to use annotations (`#`) and code sections (`####`)!
+For this chapter create directory called "Chapter_10-11" in your main directory and set it as the working directory. Then create a script called "4-Handy_tips.R". Remember to use annotations (`#`) and code sections (`####`)!
 
 However, I'll first introduce you to some R conventions and then some useful abilities of RStudio.
 
@@ -20,7 +23,7 @@ knitr::include_graphics(path = "figures/rules.png", auto_pdf = TRUE)
 R conventions are style guides. You do not need to follow them but they are intended to help make code easier to read. There are lots of different suggestions for different parts of R code. Here we will only look at conventions for __object/variable names__ and wide vs long code formatting.
 
 ### Variable names
-__Variable names__ have certain rules that must be followed. We covered these in week 1 but below is a reminder:
+__Variable names__ have certain rules that must be followed. We covered these in chapter 2 but below is a reminder:
 
 - Must start with a letter.
 - Cannot contain spaces.
@@ -75,19 +78,19 @@ threeFourFive2Vec
 thisIsCamelCase
 ``` 
 
-There are exceptions when you will want to break your naming style such as when creating __vectors__ to be used as columns for a __data frame__.
+There are exceptions when you will want to break your preferred naming style. One such example is when you are creating __vectors__ to be used as columns for a __data frame__.
 
 #### Wide vs Long coding
 
-If a command/__function__ is only on one line then you were using wide coding. This is good with short commands and __functions__ but is not very suitable for longer commands. Below are examples of long commands over one line each.
+If a command/__function__ is only on one line then you were using __wide__ coding. This is good with short commands and __functions__ but is not very suitable for longer commands. Below are examples of long commands over one line each.
 ```{r eval=FALSE}
 #Create a data frame called df
 df <- data.frame(one = c(2,4,6), three = c(6,12,18), five = c(10,20,30), row.names = c("Two", "Four", "Six"))
 #Create a data frame called beach_df_2
-beach_df_2 <- data.frame(Crab = c(10,1,1,4) ,Oystercatcher = c(5,6,4,4),Sandpiper = c(1,1,2,3) ,Starfish = c(3,3,7,4), row.names = c("Formby","West Kirby","Crosby","New Brighton"))
+beach_df_2 <- data.frame(Crab = c(10,1,1,4), Oystercatcher = c(5,6,4,4), Sandpiper = c(1,1,2,3), Starfish = c(3,3,7,4), row.names = c("Formby","West Kirby","Crosby","New Brighton"))
 ```
 
-Compare the above with the below long coding where arguments are separated by new lines.
+Compare the above with the below __long__ coding where arguments are separated by new lines.
 ```{r eval=FALSE}
 #Create a data frame called df
 df <- data.frame(one = c(2,4,6), 
@@ -114,12 +117,16 @@ RStudio has many useful features which we have not covered. Let us remedy this a
 knitr::include_graphics(path = "figures/global.png", auto_pdf = TRUE)
 ```
 
-To get to the RStudio Global Options click "Tools" in the RStudio Toolbar, then from the drop down menu click "Global Options..". You should see something similar to the below:
-```{r, fig.align = 'center',out.width= '40%', echo=FALSE }
+To get to the RStudio Global Options click "Tools" in the RStudio Toolbar, then from the drop down menu click "Global Options.." . You should see something similar to the below:
+```{r, fig.align = 'center',out.width= '75%', echo=FALSE }
 knitr::include_graphics(path = "figures/RStudio_global_options.png", auto_pdf = TRUE)
 ```
 
+<<<<<<< HEAD
 Have a look through the "General", "Code", and "Appearance" sections. The other sections are more advanced and I would suggests you ignore them currently.
+=======
+Have a look through the "General", "Code", and "Appearance" sections. The other sections are more advanced and I would suggest you ignore them currently.
+>>>>>>> master
 
 Feel free to click on options in the "Appearance" section to see what they do. If you do not like your choices you can click the "Cancel" button to negate your recent choices and close the window. If you want to save your changes you can click the "Apply" button.
 
@@ -132,7 +139,7 @@ Also change the following for later.
 5. Click "Apply" at the bottom followed by "OK".
 
 This will be useful for tab completion which we will cover shortly.
-```{r, fig.align = 'center',out.width= '40%', echo=FALSE }
+```{r, fig.align = 'center',out.width= '75%', echo=FALSE }
 knitr::include_graphics(path = "figures/RStudio_manual_tab.png", auto_pdf = TRUE)
 ```
 
@@ -143,12 +150,12 @@ knitr::include_graphics(path = "figures/sweep.png", auto_pdf = TRUE)
 Sweep buttons allow you to sweep away items you no longer want in RStudio. There are two main sweep buttons, one for the __Console window__ and one for the __Environment pane__.
 
 The sweep button for the __console window__ will clear all the text in the __console pane__. This is useful if you have filled the __console__ with lots of commands and __data frames__. This sweep button will not actually affect any of your work so do not be afraid to use it. The location of the sweep button is shown below.
-```{r, fig.align = 'center',out.width= '40%', echo=FALSE }
+```{r, fig.align = 'center',out.width= '60%', echo=FALSE }
 knitr::include_graphics(path = "figures/RStudio_console_sweep.png", auto_pdf = TRUE)
 ```
 
 The sweep button for the __Environment pane__ is a bit more dangerous. This sweep button will clear all the objects from your environment. This will remove all the __variables__ you have created. This is not too bad if you have been using the __script editor__ to do your work as you can rerun all your commands to refill your environment. The location of the sweep button is shown below.
-```{r, fig.align = 'center',out.width= '40%', echo=FALSE }
+```{r, fig.align = 'center',out.width= '60%', echo=FALSE }
 knitr::include_graphics(path = "figures/RStudio_env_sweep.png", auto_pdf = TRUE)
 ```
 
@@ -156,13 +163,13 @@ knitr::include_graphics(path = "figures/RStudio_env_sweep.png", auto_pdf = TRUE)
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/multiplication.png", auto_pdf = TRUE)
 ```
-Hopefully you'll find the above useful. We will learn some new __functions__ but before that let us create a quick __data frame__. You are going to make a multiplication table. The __data frame__ will be a 10 by 10 table with numbers one to ten as the row names and the column names. The value in each cell/index will be equal to the row name number times the column name number.
+Hopefully you'll find the above useful. We will learn some new __functions__ but before that let us create a quick __data frame__. You are going to make a multiplication table. The __data frame__ will be a 10 by 10 table with numbers one to ten as the row names and the column names. The value in each cell/index will be equal to the row name number multiplied by the column name number.
 
 Before looking at the code below can you think of a way to do this?
 
 The code below shows a method to create this __data frame__. I have tried to show you a variety of methods to create the __vectors__ below for demonstration purposes. Look at each command and make sure you understand how they work before continuing. In real life I would use one of these methods rather than many different methods.
 
-__Tip__: If you double click a word/name in the __script editor__ it will highlight it. You can then start to type to replace the highlighted word.
+__Tip__: If you double click a word/name in the __script editor__ it will highlight it. You can then start typing to replace the highlighted word.
 
 ```{r eval=FALSE}
 #Vectors that will become columns
@@ -202,7 +209,12 @@ Tab completion is a very useful method when coding in any language. It takes som
 
 Before we continue, the tab key is the key above the "CAPS" key and left of the 'q' key. If you would like a demonstration of tab completion please ask!
 
-The first way to tab complete is to tab complete file names. First set your working directory to the "Tea" directory in the "Week_4_files" directory you downloaded and unzipped for this week. Then you will run the below command. However, when your cursor is in the double quotes first press tab. This will hopefully show a dropdown of selections. There are two ways to then get to your choice:
+The first way to tab complete is to tab complete file names. First you will need to download the following files into your “Chapter_10-11” directory.
+
+- [tea_consumption.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/tea_consumption.csv)
+- [english_speaking_population_of_countries.txt](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/english_speaking_population_of_countries.txt)
+
+Next you will run the command that is below. However, when your cursor is in the double quotes first press tab. This will hopefully show a dropdown of selections. There are two ways to then get to your choice:
 
 1. Use the up and down arrow keys to move to the file name you want and then press enter to have the file name be autofilled.
 2. Start typing your file name till it is the top choice of the drop down menu. You can then press enter to autofill the file name.
@@ -215,8 +227,7 @@ tea_df <- read.csv("tea_consumption.csv", check.names=FALSE)
 
 You may notice that we only provided the file name and the `check.names=FALSE` for the `read.csv()` __function__. This is because of the format of the input file. In this case we do not want any of the input columns converted into row names. Additionally, the file was comma separated and the default separator to be used for `read.csv()` is commas. We will come back to this __data frame__ so either keep the __variable__ in your __environment__ or keep the __read__ code handy.
 
-Let us __read__ in another file using tab complete to autofill the file name again. You will need to set your working directory to the "Lanuguage" directory in your "Week_4_files" directory first.
-
+Let us __read__ in another file using tab complete to autofill the file name again. 
 ```{r eval=FALSE}
 english_df <- read.csv("english_speaking_population_of_countries.txt", 
                    sep = "\t", 
@@ -247,7 +258,7 @@ knitr::include_graphics(path = "figures/tea.png", auto_pdf = TRUE)
 ```
 We will have a quick look at the "tea_df". This data shows the annual consumption of tea per capita with a rank based on the highest to lowest consumers.
 
-Unfortunately the third column has the annual per capita consumption in kilograms (KG) and pounds (LB) with the two values seperated by a "_". Thankfully we can use the __function__ `gsub()` to fix this. 
+Unfortunately the third column has the annual per capita consumption in kilograms (KG) and pounds (LB) with the two values separated by a "_". Thankfully we can use the __function__ `gsub()` to fix this. 
 
 `gsub()` will look for a specified pattern and replace it with a specified replacement.
 `gsub()` is only to be used for __strings__.
@@ -306,7 +317,7 @@ str(tea_df)
 If you are interested in more regular expressions I would recommend looking at the following resources:
 
 - https://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions
-- https://rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf
+- https://raw.githubusercontent.com/rstudio/cheatsheets/main/regex.pdf
 
 ## English speakers across the world
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
@@ -317,7 +328,7 @@ Now we will do some processing of the "english_df" __data frame__. This shows th
 There are a lot of NA values. Looking at the values in the __data frame__ try to figure out the two reasons that these NA values are present. Once you have had a thought you can have a look at the below two reasons.
 
 1. Some countries have zero population of English first speakers and some countries have zero population of people who speak English as an additional language.
-2. Some countries are missing data on the number of first and additional speakers, eg. Ukraine.
+2. Some countries are missing data on the number of first and additional speakers, e.g.. Ukraine.
 
 We will fix these issues one by one. First let us change all NAs to the number 0. The below method requires a lot of R knowledge to understand. I admit I do not fully understand it and I googled to find the answer. In this case the important part is that it works and it is a very short command.
 ```{r eval=FALSE}
@@ -335,7 +346,7 @@ english_total_logical_vec <- english_df$`Total English speakers` == english_tota
 #Now create a new data frame by indexing the english_df rows by the logical vector
 #This will mean all TRUE rows will be kept and all FALSE rows will not be kept
 english_complete_datasets_df <- english_df[english_total_logical_vec,]
-#Remove the vectors we do not need anymore
+#Remove the vectors we do not need any more
 rm(english_total_vec,english_total_logical_vec)
 
 #2nd method is to carry out the above all in one command

@@ -1,18 +1,24 @@
+<<<<<<< HEAD
 # (PART\*) Week 6 {-}
 
 # Plots: Scatter plots and Box plots
+=======
+# Scatter plots and Box plots
+>>>>>>> master
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/large_brush.png", auto_pdf = TRUE)
 ```
 
-Last week we learnt how to make Histograms and Line graphs. This week it is Scatter plots and Box plots.
+Last chapter we learnt how to make Histograms and Line graphs. In this chapter it is Scatter plots and Box plots.
+
+Continue using the directory "Chapter_13-16" as the working directory.
 
 ## Scatter plot
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/Scatterplot_2.png", auto_pdf = TRUE)
 ```
 
-Scatter plots are a great way to compare two matching variables. To make a scatter plot we use the `plot()` __function__ again. This means a lot of what we went through last week will be helpful for this week.
+Scatter plots are a great way to compare two matching variables. To make a scatter plot we use the `plot()` __function__ again. This means a lot of what we went through the last chapter will be helpful for this chapter
 
 ### Basic examples
 First we'll create a simple scatter plot plotting the numbers 1:20 against the same range of numbers times by 2. For this we provide the option `type = "p"` to indicate we want the data plotted as points.
@@ -46,7 +52,9 @@ The data we will be using will contain the following information:
 - Group, In this case are they Mammals or Reptiles
 - Biom, are they aquatic, semiaquatic, or terrestrial
 
-The first step is to read in the data in the "Week_6_files" directory. We have included a new option: `stringsAsFactors = TRUE`. This is important for plotting and will be explained more later.
+First download the [animal_sizes.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/animal_sizes.csv) file into your "Chapter_13-16" directory.
+
+Next, __read__ the data into R. We have included a new option: `stringsAsFactors = TRUE`. This is important for plotting and will be explained more later.
 
 ```{r eval=FALSE}
 animal_df <- read.csv("animal_sizes.csv", 
@@ -194,7 +202,7 @@ months_factor_vec
 levels(months_factor_vec)
 ```
 
-Know let us make a nice scatter plot of the animal data with points coloured by Biom and shaped (`pch =`) by Group.
+Now let us make a nice scatter plot of the animal data with points coloured by Biom and shaped (`pch =`) by Group.
 ```{r eval=FALSE}
 #Plot
 plot(x = animal_df$`Average mass (tonnes)`,
@@ -240,7 +248,9 @@ https://allisonhorst.github.io/palmerpenguins/
 
 This data contains information on individual penguins that were gathered from Palmer Station LTER. 
 
-As you expect the first step is to read in the file. . The file is "penguin.txt" in the "Week_6_files" directory. This time it is a tsv (tab separated file) with no row names. We will make sure that columns containing strings will be converted to __factors__.
+First download the [penguin.txt](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/penguin.txt) file into your "Chapter_13-16" directory.
+
+As you expect the next step is to __read__ in the file. This time the file is a tsv (tab separated file) with no row names. We will ensure that columns containing strings are converted to __factors__.
 ```{r eval=FALSE}
 penguin_df <- read.csv("penguin.txt", 
                       check.names = FALSE,
@@ -269,7 +279,7 @@ Below is the command for this:
 boxplot(body_mass_g~species, data = penguin_df)
 ```
 
-What is we want to split the 3 box plots into sex? 
+What if we want to split the 3 box plots into sex? 
 
 We can do that like below:
 ```{r eval=FALSE}
@@ -330,11 +340,11 @@ To save a plot to a file you can use the __functions__ `png()` and `dev.off()`.
 
 The __function__ `png()` goes before all the plotting commands. It has various options but the ones we will use are:
 
--`filename =`: Provide this with a string that will be the file filename of the resulting file.
--`units =`: The units the width and height will be in. the default is "px" for pixels but I like to go for "mm" for millimetres.
--`width =`: The width of the plot in the file.
--`height =`: The height of the plot in the file.
-- `res =`: Resolution of the plot. Usually a number between 50 and 300 with 300 being better quality. This number referes to dpi (dots per inch). 
+- `filename =`: Provide this with a string that will be the filename of the resulting file.
+- `units =`: The units the width and height will be in. the default is "px" for pixels but I like to go for "mm" for millimetres.
+- `width =`: The width of the plot in the file.
+- `height =`: The height of the plot in the file.
+- `res =`: Resolution of the plot. Usually a number between 50 and 300 with 300 being better quality. This number refers to dpi (dots per inch). 
 
 After the `png()` and plotting __functions__ you use the __function__ `dev.off()`. This lets R know you are finished plotting and so the file from `png()` will be created.
 

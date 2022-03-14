@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 # (PART\*) Week 5 {-}
 
 # Plots: Histograms and Line graphs
+=======
+# (PART\*) Plots {.unnumbered}
+
+# Histograms and Line graphs
+>>>>>>> master
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/palette.png", auto_pdf = TRUE)
 ```
 
-This week we will learn how to create two different types of plots; Histograms and Line graphs. I have chosen these two types of plots first as they are relatively straightforward to create.
+In this chapter we will learn how to create two different types of plots; Histograms and Line graphs. I have chosen these two types of plots first as they are relatively straightforward to create.
+
+Create and use the directory "Chapter_13-16" as the working directory for this chapter. Additionally create a new script called "Histograms_n_line_graphs.R" for this chapter.
 
 ## Histogram
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
@@ -64,7 +72,7 @@ hist(eu_df$eu_pop, col = "purple",
 
 We have a similar pattern as with the number of cities (most have low numbers, some high numbers). 
 
-We can quickly check if the countries with the high number of cities also have the high populations by creating a new column equal to population / number of cities. This will give is nice ratios. We can plot the distribution of these ratios in a histogram.
+We can quickly check if the countries with the high number of cities also have the high populations by creating a new column equal to population / number of cities. This will give us nice ratios. We can plot the distribution of these ratios in a histogram.
 
 For this histogram we will also add a title to the plot with the option `main = `. Additionally we will choose a different colour. Having different colours and main titles makes it easier for you to instantly know which plot you are looking at.
 
@@ -89,12 +97,15 @@ knitr::include_graphics(path = "figures/RStudio_plot_pane_arrows.png", auto_pdf 
 ```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
 knitr::include_graphics(path = "figures/line_graph.png", auto_pdf = TRUE)
 ```
-Line graphs are perfect for showing change over time. Knowing this we'll go back to a data set we have touched before, the file "UK_retail.txt" from week 3. This file showed the success of four different retail sectors in the UK from September 2017 to September 2020.
+Line graphs are perfect for showing change over time. Knowing this we'll go back to a data set we have touched before, the file "UK_retail.txt" from Chapter 8. This file showed the success of four different retail sectors in the UK from September 2017 to September 2020.
 
 ### Read in data
-First step is to set your working directory to the "Week_3_files" directory so you can then read in the data. Once the __data frame__ is created we will remove all non 2020 information.
+First step is to __read__ in the data from the "Chapter_8_files" directory. Once the __data frame__ is created we will remove all non 2020 information.
+
+__Note__: The `../` below represents going up one directory. I.e. going up from your current working directory ("Chapter_13-16") to the main directory so it can be directed to "Chapter_8_files".
+
 ```{r eval=FALSE}
-retail_df <- read.csv("UK_retail.txt", sep = "\t", row.names = 1, check.names = FALSE)
+retail_df <- read.csv("../Chapter_8_files/UK_retail.txt", sep = "\t", row.names = 1, check.names = FALSE)
 retail_df <- retail_df[29:37,]
 ```
 
@@ -169,7 +180,7 @@ Numbers on the x axis are not ideal in this case. We will therefore use the `axi
 
 For more info for `axis()` run the command `?axis` to see its help page.
 
-To use the `axis()` __function__ correctly we need to make sure there are no preexisting labels and tick marks on the x axis or else the new labels will go on top of the old. To do this we provide the `plot()` __function__ with the option `naxt ='n'`, i.e. no x axis ticks.
+To use the `axis()` __function__ correctly we need to make sure there are no preexisting labels and tick marks on the x axis or else the new labels will go on top of the old. To do this we provide the `plot()` __function__ with the option `xaxt ='n'`, i.e. no x axis ticks.
 
 ```{r eval=FALSE}
 #Produce line plot of the food sector over time point.
@@ -240,4 +251,8 @@ legend(x = "topleft",
        lty = 1)
 ```
 
+<<<<<<< HEAD
 That is a good amount to go through. Therefore there is no exercise this week. If you have time read through the above again and possible try to create a histogram or line plot with one of the data sets from previous weeks.
+=======
+That is a good amount to go through. The next chapter will go into scatter plots and box plots. If you have time read through the above again and possibly try to create a histogram or line plot with one of the data sets from previous chapters.
+>>>>>>> master
