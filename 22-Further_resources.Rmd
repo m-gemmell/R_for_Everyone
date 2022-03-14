@@ -15,48 +15,212 @@ knitr::include_graphics(path = "figures/internet.png", auto_pdf = TRUE)
 
 ## Chapter 7 files
 
--   [Liverpool_beaches.csv](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/Liverpool_beaches.csv)
--   [Clothing_stores.txt](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/Clothing_stores.txt)
--   [Census_2011_L\_postcodes_counts.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/Census_2011_L_postcodes_counts.csv)
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/Liverpool_beaches.csv",
+  button_label = "Download Liverpool beaches csv file",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/Clothing_stores.txt",
+  button_label = "Download Clothing_stores.txt",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/Census_2011_L_postcodes_counts.csv",
+  button_label = "Download Census_2011_L_postcodes_counts.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
 
 ## Chapter 8 files
 
--   [bat_roosts.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/bat_roosts.csv)
--   [UK_retail.txt](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/UK_retail.txt)
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/bat_roosts.csv",
+  button_label = "Download bat_roosts.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/UK_retail.txt",
+  button_label = "Download UK_retail.txt",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
 
 ## Chapter 10-11 files
 
--   [tea_consumption.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/tea_consumption.csv)
--   [english_speaking_population_of_countries.txt](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/english_speaking_population_of_countries.txt)
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/tea_consumption.csv",
+  button_label = "Download tea_consumption.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/english_speaking_population_of_countries.txt",
+  button_label = "Download english_speaking_population_of_countries.txt",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
 
 ## Chapter 13-16 files
 
--   [animal_sizes.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/animal_sizes.csv)
--   [penguin.txt](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/penguin.txt)
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/animal_sizes.csv",
+  button_label = "Download animal_sizes.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/penguin.txt",
+  button_label = "Download penguin.txt",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
 
 ## Chapter 17-19
 
--   [Fish.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/Fish.csv)
--   [world_happiness_report_2016.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/world_happiness_report_2016.csv)
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/Fish.csv",
+  button_label = "Download Fish.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/world_happiness_report_2016.csv",
+  button_label = "Download world_happiness_report_2016.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
 
 ## Chapter 20-21
 
--   [student_grades_group_A.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_A.tsv)
--   [student_grades_group_B.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_B.tsv)
--   [student_grades_group_C.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_C.tsv)
--   [student_grades_group_D.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_D.tsv)
--   [student_grades_group_E.tsv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/student_grades_group_E.tsv)
-
-# Workshop slides & videos
-
-1.  Intro and foundations: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_1_intro_and_foundations.pdf) & [video](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/videos/NEOF_R_recording%201_Intro_and_foundations.mkv)
-2.  Classes and data structures: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_2_classess_and_data_structures.pdf) & [video](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/videos/NEOF_R_recording%202_classes_and_data_structures.mkv)
-3.  Files and subsetting: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_3_files_sand_subsetting_data.pdf) & [video](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/videos/NEOF_R_recording%203_files_and_subsetting_data.mkv)
-4.  Handy tips and tricks: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_4_handy_tips_and_tricks.pdf) & [video](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/videos/NEOF_R_recording%204_handy_tips_and_tricks.mkv)
-5.  Plots part 1: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_5_plots_1.pdf) & [video](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/videos/NEOF_R_recording%205_Plots_part_1.mkv)
-6.  Plots part 2: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_6_plots_2.pdf) & [video](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/videos/NEOF_R_recording%206_Plots_part_2.mkv)
-7.  Basic stats: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_7_basic_stats.pdf) & video
-8.  Basic programming: [Slides](https://www.cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/slides_and_videos/slides/Intro_to_R_8_basic_programming.pdf) & video
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_A.tsv",
+  button_label = "Download student_grades_group_A.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_B.tsv",
+  button_label = "Download student_grades_group_B.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_C.tsv",
+  button_label = "Download student_grades_group_C.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_D.tsv",
+  button_label = "Download student_grades_group_D.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_E.tsv",
+  button_label = "Download student_grades_group_E.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
 
 # Base R books and links
 **Quick-R**: <https://www.statmethods.net/index.html>

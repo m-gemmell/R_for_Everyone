@@ -10,7 +10,20 @@ knitr::include_graphics(path = "figures/world_happiness.png", auto_pdf = TRUE)
 ### Data
 For this exercise we will be looking at the World Happiness Report for 2016. This report is a survey of the state of global happiness.
 
-Download [world_happiness_report_2016.csv](https://cgr.liv.ac.uk/illum/NEOFworkshops_5bfa93ca0482d69d/Intro_to_R/data/world_happiness_report_2016.csv) to the directory "Chapter_17-18".
+Download __world_happiness_report_2016.csv__to the directory "Chapter_17-18".
+
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/world_happiness_report_2016.csv",
+  button_label = "Download world_happiness_report_2016.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
 
 Source: https://www.kaggle.com/unsdsn/world-happiness?select=2016.csv
 

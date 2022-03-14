@@ -29,7 +29,9 @@ bat_t_df <- as.data.frame(t(bat_df))
 
 __Write__ file:
 ```{r eval=FALSE}
-write.table(bat_t_df, file = "Chapter_8_files/bat_roosts_t.csv", sep = ",", quote = FALSE, col.names = NA)
+write.table(bat_t_df, 
+            file = "Chapter_8_files/bat_roosts_t.csv", 
+            sep = ",", quote = FALSE, col.names = NA)
 ```
 
 ## UK retail solution
@@ -39,7 +41,9 @@ knitr::include_graphics(path = "figures/UKPounds.png", auto_pdf = TRUE)
 
 Read in file:
 ```{r eval=FALSE}
-uk_retail_df <- read.csv("Chapter_8_files/UK_retail.txt", sep = "\t", row.names = 1, check.names = FALSE)
+uk_retail_df <- read.csv("Chapter_8_files/UK_retail.txt", 
+                         sep = "\t", row.names = 1, 
+                         check.names = FALSE)
 ```
 
 Create 2020 __data frame__:

@@ -98,7 +98,9 @@ First step is to __read__ in the data from the "Chapter_8_files" directory. Once
 __Note__: The `../` below represents going up one directory. I.e. going up from your current working directory ("Chapter_13-16") to the main directory so it can be directed to "Chapter_8_files".
 
 ```{r eval=FALSE}
-retail_df <- read.csv("../Chapter_8_files/UK_retail.txt", sep = "\t", row.names = 1, check.names = FALSE)
+retail_df <- read.csv("../Chapter_8_files/UK_retail.txt", 
+                      sep = "\t", row.names = 1, 
+                      check.names = FALSE)
 retail_df <- retail_df[29:37,]
 ```
 
@@ -244,8 +246,4 @@ legend(x = "topleft",
        lty = 1)
 ```
 
-<<<<<<< HEAD
-That is a good amount to go through. Therefore there is no exercise this week. If you have time read through the above again and possible try to create a histogram or line plot with one of the data sets from previous weeks.
-=======
 That is a good amount to go through. The next chapter will go into scatter plots and box plots. If you have time read through the above again and possibly try to create a histogram or line plot with one of the data sets from previous chapters.
->>>>>>> master
