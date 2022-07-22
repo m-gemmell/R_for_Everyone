@@ -1,0 +1,255 @@
+# Further resources
+
+## R user groups and forums
+
+```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
+knitr::include_graphics(path = "figures/internet.png", auto_pdf = TRUE)
+```
+
+-   <https://jumpingrivers.github.io/meetingsR/r-user-groups.html#europe>
+-   <https://www.r-consortium.org/blog/2019/09/09/r-community-explorer-r-user-groups>
+-   <https://r-dir.com/community/forums.html>
+
+
+##Workshop files {#workshopfiles}
+
+### Chapter 7 files
+
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/Liverpool_beaches.csv",
+  button_label = "Download Liverpool beaches csv file",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/Clothing_stores.tsv",
+  button_label = "Download Clothing_stores.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/Census_2011_L_postcodes_counts.csv",
+  button_label = "Download Census_2011_L_postcodes_counts.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+
+### Chapter 8 files
+
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/bat_roosts.csv",
+  button_label = "Download bat_roosts.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/UK_retail.tsv",
+  button_label = "Download UK_retail.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+
+### Chapter 10-11 files
+
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/tea_consumption.csv",
+  button_label = "Download tea_consumption.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/english_speaking_population_of_countries.tsv",
+  button_label = "Download english_speaking_population_of_countries.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+
+### Chapter 13-16 files
+
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/animal_sizes.csv",
+  button_label = "Download animal_sizes.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/penguin.tsv",
+  button_label = "Download penguin.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+
+### Chapter 17-19
+
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/Fish.csv",
+  button_label = "Download Fish.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/world_happiness_report_2016.csv",
+  button_label = "Download world_happiness_report_2016.csv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+
+### Chapter 20-21
+
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_A.tsv",
+  button_label = "Download student_grades_group_A.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_B.tsv",
+  button_label = "Download student_grades_group_B.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_C.tsv",
+  button_label = "Download student_grades_group_C.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_D.tsv",
+  button_label = "Download student_grades_group_D.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+```{r echo=FALSE}
+library(downloadthis)
+download_link(
+  link="https://m-gemmell.github.io/R_for_everyone/downloads/student_grades_group_E.tsv",
+  button_label = "Download student_grades_group_E.tsv",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = TRUE
+)
+```
+<br>
+
+## Base R books and links
+**Quick-R**: <https://www.statmethods.net/index.html>
+
+**R Cookbook**: <https://rc2e.com/>
+
+## R cheat sheets
+
+<https://rstudio.com/resources/cheatsheets/>
+
+## Advanced R topics
+
+
+**R packages**: <https://r-pkgs.org/>
+
+**Efficient R Programming**: <https://csgillespie.github.io/efficientR/>
+
+**R for Data Science**: <https://r4ds.had.co.nz/>
+
+**R Graphics Cookbook**: <https://r-graphics.org/>
+
+**Fundamentals of Data Visualization**: <https://clauswilke.com/dataviz/>
+
+**R BOOKDOWN** (used to make this book): <https://bookdown.org/>
+
+**Hands-On Programming with R**: <https://rstudio-education.github.io/hopr/>
+
+**Efficient R programming**: <https://csgillespie.github.io/efficientR/>
+
+## Datasets
+
+I got a lot of my datasets from [Kaggle](https://www.kaggle.com/)

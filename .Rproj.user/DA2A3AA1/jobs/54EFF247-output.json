@@ -1,0 +1,6 @@
+[1,"\u001B[31m\u001B[91mERROR: YAMLException: bad indentation of a mapping entry (F:\\Git\\R_for_Everyone_quarto\\_quarto.yml, 13:7)\r\n"]
+[1,"12: \u001B[34m      - part: Start\u001B[91m\r\n"]
+[1,"13: \u001B[34m      chapters:\u001B[91m\r\n"]
+[1,"          ~\r\n"]
+[1,"14: \u001B[34m      - index.qmd\u001B[91m\u001B[31m\r\n"]
+[1,"\u001B[39m\n"]

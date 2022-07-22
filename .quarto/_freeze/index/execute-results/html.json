@@ -1,0 +1,14 @@
+{
+  "hash": "18c121cd589d3d1f94a4d14aa5657d43",
+  "result": {
+    "markdown": "# Introduction\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](figures/R.png){fig-align='center' width=20%}\n:::\n:::\n\n\nThese materials will teach you the fundamentals of R and are intended for beginners. The first section will focus on the basics of R with foundations and objects. Next you will look at how to read in files and write out files from R. This will be followed by getting further practice on the completed materials whilst learning some handy tips and tricks.\n\nYou will then get to apply your R skills to create plots and carry out some statistics. You will learn how to make four types of plots with R:\n\n-   Line graphs\n-   Histograms\n-   Scatterplots\n-   Boxplots\n\nYou will then be carrying out some basic statistics, don't worry it won't be a statistics lesson.\n\nThe materials will finish with some harder coding where you'll learn to make loops, use ifs, and create R functions.\n\nThese materials will involve theory, practice, exercises, and solutions:\n\n-   The theory will explain R concepts and terminology. R terminology can be quite confusing but it is important to learn as it makes asking questions online a lot easier.\n-   Practice will involve code to run whilst reading through the theory. This will allow you to see the output of R and hopefully help you understand how R works.\n-   Exercises will give you a task to carry out based on the knowledge and skills you learned from the theory and practise.\n-   Solutions for the exercise are after the exercise. Please try the exercise before looking at the solution, however make sure you read the solutions even if you completed the exercise successfully as there is extra information in these sections.\n\nCommands are in the following font and colour and should be run in RStudio (These should not be copied into R from this document):\n\n\n::: {.cell}\n\n```{.r .cell-code}\nThis is a command \n```\n:::\n\n\n<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"><img src=\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" alt=\"Creative Commons Licence\" style=\"border-width:0\"/></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,4 @@
+[1,"\u001B[31m\u001B[91mERROR: YAMLError: can not read a block mapping entry; a multiline key may not be an implicit key at line 54, column 3:\r\n"]
+[1,"    ::: {.layout-example .column-page}\r\n"]
+[1,"      ^\u001B[31m\r\n"]
+[1,"\u001B[39m\n"]

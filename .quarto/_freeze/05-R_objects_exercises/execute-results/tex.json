@@ -1,0 +1,18 @@
+{
+  "hash": "7c54af1395b7fddef1973145eefd1d47",
+  "result": {
+    "markdown": "# R objects exercises\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](figures/beach.png){fig-align='center' width=20%}\n:::\n:::\n\n\nFor this exercise simply produce the following tables as __data frames__ in R. Please carry this out in your __\"Exercises.R\"__ script and remember about code sections and annotations.\n\nTip: You can either write completely new code or reuse and alter previous code. \n\n## df\n\n__Note__: The top row is the column names and the left-most column is the row names.\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n|     | One| Three| Five|\n|:----|---:|-----:|----:|\n|Two  |   2|     6|   10|\n|Four |   4|    12|   20|\n|Six  |   6|    18|   30|\n:::\n:::\n\n\n\n## beach_df_2\n\n__Note__: The top row is the column names and the left-most column is the row names.\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n|             | Crab| Oystercatcher| Sandpiper| Starfish|\n|:------------|----:|-------------:|---------:|--------:|\n|Formby       |   10|             5|         1|        3|\n|West Kirby   |    1|             6|         1|        3|\n|Crosby       |    1|             4|         2|        7|\n|New Brighton |    4|             4|         3|        4|\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

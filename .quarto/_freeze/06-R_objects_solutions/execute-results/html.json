@@ -1,0 +1,14 @@
+{
+  "hash": "4521bc23a27f085b02f6a26062fb17b3",
+  "result": {
+    "markdown": "# R objects solutions\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](figures/week2_solutions.png){fig-align='center' width=20%}\n:::\n:::\n\n\n## df solution\n### Step 1\nCreate __vectors__ for columns and row names:\n\n::: {.cell}\n\n```{.r .cell-code}\nOne <- c(2,4,6)\nThree <- c(6,12,18)\nFive <- c(10,20,30)\nrow_names <- c(\"Two\", \"Four\", \"Six\")\n```\n:::\n\n\n### Step 2a\nCreate the __data frame__ from vectors:\n\n::: {.cell}\n\n```{.r .cell-code}\ndf <- data.frame(One,Three,Five)\n```\n:::\n\nAdd row names:\n\n::: {.cell}\n\n```{.r .cell-code}\nrow.names(df) <- row_names\n```\n:::\n\n### Step 2b\nAlternatively you can define the row names in the `data.frame()` `function` as an option:\n\n::: {.cell}\n\n```{.r .cell-code}\ndf <- data.frame(One,Three,Five, row.names = row_names)\n```\n:::\n\n\n## beach_df_2 solution\n### Step 1\nCreate __vectors__ for columns and row names:\n\n::: {.cell}\n\n```{.r .cell-code}\nCrab <- c(10,1,1,4)\nOystercatcher <- c(5,6,4,4)\nSandpiper <- c(1,1,2,3)\nStarfish <- c(3,3,7,4)\nrow_names_2 <- c(\"Formby\",\"West Kirby\",\"Crosby\",\"New Brighton\")\n```\n:::\n\n### Step 2a\nCreate the __data frame__ from __vectors__:\n\n::: {.cell}\n\n```{.r .cell-code}\nbeach_df_2 <- data.frame(Crab,Oystercatcher,Sandpiper,Starfish)\n```\n:::\n\nAdd row names:\n\n::: {.cell}\n\n```{.r .cell-code}\nrow.names(beach_df_2) <- row_names_2\n```\n:::\n\n### Step 2b\nAlternatively you can define the row names in the `data.frame()` __function__ as an option:\n\n::: {.cell}\n\n```{.r .cell-code}\nbeach_df_2 <- data.frame(Crab,Oystercatcher,Sandpiper,Starfish, row.names = row_names_2)\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

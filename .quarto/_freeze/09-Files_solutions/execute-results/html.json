@@ -1,0 +1,14 @@
+{
+  "hash": "6b8803701ff475f97188cdaecdcfca91",
+  "result": {
+    "markdown": "# Files solutions\n\nBefore looking at these solutions keep in mind that there are many different ways to do the same thing in R. Therefore if your scripts are different than the ones below it does not mean they are wrong. As long as they produce the intended output they are correct.\n\n## Bats solution\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](figures/bat.png){fig-align='center' width=20%}\n:::\n:::\n\n\nRead in the file as a __data frame__:\n\n::: {.cell}\n\n```{.r .cell-code}\nbat_df <- read.csv(\"Chapter_8_files/bat_roosts.csv\", row.names = 1, check.names = FALSE)\n```\n:::\n\n\nAdd a row with column totals:\n\n::: {.cell}\n\n```{.r .cell-code}\nbat_df[\"UK\",] <- colSums(bat_df) \n```\n:::\n\n\nAdd a column with row totals:\n\n::: {.cell}\n\n```{.r .cell-code}\nbat_df$All_Bat_Species <- rowSums(bat_df) \n```\n:::\n\n\nCreate transposed __data frame__:\n\n::: {.cell}\n\n```{.r .cell-code}\nbat_t_df <- as.data.frame(t(bat_df)) \n```\n:::\n\n\n__Write__ file:\n\n::: {.cell}\n\n```{.r .cell-code}\nwrite.table(bat_t_df, \n            file = \"Chapter_8_files/bat_roosts_t.csv\", \n            sep = \",\", quote = FALSE, col.names = NA)\n```\n:::\n\n\n## UK retail solution\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](figures/UKPounds.png){fig-align='center' width=20%}\n:::\n:::\n\n\nRead in file:\n\n::: {.cell}\n\n```{.r .cell-code}\nuk_retail_df <- read.csv(\"Chapter_8_files/UK_retail.tsv\", \n                         sep = \"\\t\", row.names = 1, \n                         check.names = FALSE)\n```\n:::\n\n\nCreate 2020 __data frame__:\nRead in file:\n\n::: {.cell}\n\n```{.r .cell-code}\n#Can index to get the desired columns\nuk_retail_2020_df <- uk_retail_df[29:37,]\n#Alternatively the tail() function can be used\n#It is like head() but will get lowest rows\nuk_retail_2020_df <- tail(uk_retail_df, n = 9)\n```\n:::\n\n\nPrint food index phrases:\n\n::: {.cell}\n\n```{.r .cell-code}\npaste(\"The Food retail index for\", row.names(uk_retail_2020_df),\n      \"was\", uk_retail_2020_df$Food, \n      sep = \" \")\n```\n:::\n\n\nTotal and mean rows:\n\n::: {.cell}\n\n```{.r .cell-code}\nuk_retail_2020_df[\"Total\",] <- colSums(uk_retail_2020_df)\nuk_retail_2020_df[\"Average\",] <- colMeans(head(uk_retail_2020_df, n = 9))\n```\n:::\n\n\nWrite out file:\n\n::: {.cell}\n\n```{.r .cell-code}\nwrite.table(uk_retail_2020_df, \"Chapter_8_files/UK_retail_2020.tsv\", \n            sep = \"\\t\", col.names = NA, quote = FALSE)\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
