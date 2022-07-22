@@ -194,14 +194,6 @@ You can use certain __logical operators__ to compare __strings__ though:
 The __paste() function__ is very useful to combine two or more __strings__ into one.
 ```{r eval=FALSE}
 paste("The following is a string:", long_string) 
-<<<<<<< HEAD
-paste(number_string, "is a", word_string)
-#By default paste will put a spaces between each string you provide
-#You can use the sep option to specific your own
-paste("However", " this is separated by a comma", sep = ",")
-#Or you can make it so there is no separator
-paste("no separator",numeric_to_string, sep = "")
-=======
 paste(number_string, "and the", word_string)
 #By default paste will put a space (sep = " ") between each string you provide
 #You can use the sep option to specify your own
@@ -211,7 +203,6 @@ paste("no separator",numeric_to_string, sep = "")
 #Alternatively you can use paste0()
 #Where there is no separator by default (sep ="")
 paste0("no separator",numeric_to_string)
->>>>>>> master
 ```
 
 ## Code section continued
